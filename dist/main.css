@@ -1,0 +1,156 @@
+:root {
+  font-size: calc(1vw + 1vh + .8vmin);
+}
+
+body {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-family: 'Recursive', sans-serif;
+  color: #030303;
+  background-color: #f7f7f7;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  padding: 0.8em;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 1.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+h2 {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+h3 {
+  margin-bottom: 0.4em;
+}
+
+a {
+  color: #346e7a;
+  padding: 0.2em;
+}
+
+a:hover {
+  background-color: #0c353d;
+  color: #fff;
+}
+
+
+.infos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.infos dd {
+  padding-right: 2em;
+  flex-basis: 90%;
+  font-size: 0.8em;
+}
+
+.main-list {
+  list-style: none;
+}
+
+.main-list li {
+  padding: 1em;
+  border: 3px solid #ccc;
+  background-color: #fff;
+  margin-bottom: 3em;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+.tags li {
+  border: none;
+  list-style: none;
+  padding: 0.2em 0.5em;
+  background-color: #dee8ea;
+  color: #555;
+  font-size: 0.8em;
+  margin-right: 0.7em;
+  margin-bottom: 0.5em;
+}
+
+.tags li:first-letter {
+  text-transform: uppercase;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  fill: #444;
+  transform: translateY(0.15em);
+}
+
+@media screen and (min-width:640px) {
+  .main {
+    font-size: 1.25rem;
+    padding: 1em 5em;
+  }
+}
+
+@media screen and (min-width:1280px) {
+  .main {
+    font-size: 0.85rem;
+    padding: 1em 10em;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-top: 0.7em;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  article {
+    font-size: 0.8rem;
+  }
+
+  .infos dd {
+    flex-basis: auto;
+  }
+}

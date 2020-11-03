@@ -1,0 +1,50 @@
+[
+  {
+    "organization": "EFS",
+    "mission": "Don de sang",
+    "localization": "France entière",
+    "website": "https://dondesang.efs.sante.fr/",
+    "contact": "",
+    "keywords": "Soignant.e.s / personnel hospitalier"
+  },
+  {
+    "organization": "Don de matériel",
+    "mission": "Don de masques, visières, etc",
+    "localization": "France entière",
+    "website": "",
+    "contact": "Se rapprocher d'une structure médicale proche de chez vous",
+    "keywords": "Soignant.e.s / personnel hospitalier"
+  },
+  {
+    "organization": "Initiative citoyenne \"En première ligne\"",
+    "mission": "Proposition de services à destination du personnel soignant (et autres secteurs en première ligne) : garde d'enfants, courses, etc",
+    "localization": "France entière",
+    "website": "https://enpremiereligne.fr/",
+    "contact": "",
+    "keywords": "Soignant.e.s / personnel hospitalier"
+  },
+  {
+    "organization": "Association Initiative 3D",
+    "mission": "Impression 3D de visières pour hôpitaux, EHPAD et écoles",
+    "localization": "France entière",
+    "website": "",
+    "contact": "@initiative3d",
+    "keywords": "Soignant.e.s / personnel hospitalier"
+  },
+  {
+    "organization": "Initiative \"J'aide l'hôpital\"",
+    "mission": "Proposition de services à destination de l'hôpital et de la recherche (plus axé pro)",
+    "localization": "France entière",
+    "website": "https://www.jaidelhopital.fr/",
+    "contact": "",
+    "keywords": "Soignant.e.s / personnel hospitalier"
+  },
+  {
+    "organization": "Ta_Pote_Pute",
+    "mission": "Soutien national aux TDS pendant le confinement",
+    "localization": "France entière",
+    "website": "https://www.lepotcommun.fr/pot/9dket8gj",
+    "contact": "@tapotepute",
+    "keywords": "Travailleur.euse.s du sexe"
+  }
+]

@@ -1,0 +1,13 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    erb (2.2.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  erb (~> 2.2)
+
+BUNDLED WITH
+   1.17.2
