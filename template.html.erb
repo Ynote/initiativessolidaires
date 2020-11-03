@@ -13,15 +13,24 @@
      rel="stylesheet">
     <link href="main.css" rel="stylesheet" type="text/css" />
   </head>
+
   <body>
     <div class="main">
       <h1>Cagnottes et initiatives solidaires</h1>
       <h2>Inventaire collaboratif à travers la France</h2>
 
+      <form class="search">
+        <select id="category-filter">
+          <option class="placeholder">Filtrer par catégorie&hellip;</option>
+          <option value="Soignant.e.s / personnel hospitalier">Soignant.e.s / Personnel hospitalier</option>
+          <option value="Travailleur.euse.s du sexe">Travailleur.euse.s du sexe</option>
+        </select>
+      </form>
+
       <ul class="main-list">
 
         <% @inventory.each do |item| %>
-          <li>
+          <li class="show" data-category="<%= item['keywords'] %>">
             <article>
               <h3><%= item['organization'] %></h3>
               <p><%= item['mission'] %></p>
@@ -114,5 +123,26 @@
         .168-.11l.178-.178z"/>
       </symbol>
     </svg>
+
+    <script>
+      const select = document.getElementById('category-filter')
+      select.addEventListener('change', function(e) {
+        const category = select.options[select.selectedIndex].value
+        const allElements = document
+          .querySelectorAll('.main-list li')
+
+        allElements.forEach(function(element) {
+          element.classList.remove('show')
+        })
+
+        const elementsToShow = document
+          .querySelectorAll('[data-category="' + category + '"]');
+
+        elementsToShow.forEach(function(element) {
+          element.classList.add('show')
+        })
+
+      })
+    </script>
   </body>
 </html>
