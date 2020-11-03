@@ -7,7 +7,7 @@ par toute une communauté de façon collaborative.
 
 Pour en savoir plus sur l'origine de cet inventaire, vous pouvez consulter [le
 post sur le profil de @chloe.madesta](https://www.instagram.com/p/CHDOcDygLV-/)
-sur Instagram.$
+sur Instagram.
 
 ## Description
 
