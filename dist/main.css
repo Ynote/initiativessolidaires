@@ -80,6 +80,11 @@ a:hover {
   background-color: #fff;
   margin-bottom: 1em;
   border-radius: 1px;
+  display: none;
+}
+
+.main-list li.show {
+  display: block;
 }
 
 .tags {
