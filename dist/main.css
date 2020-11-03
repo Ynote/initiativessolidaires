@@ -78,7 +78,8 @@ a:hover {
   padding: 1em;
   border: 3px solid #ccc;
   background-color: #fff;
-  margin-bottom: 3em;
+  margin-bottom: 1em;
+  border-radius: 1px;
 }
 
 .tags {
@@ -92,11 +93,11 @@ a:hover {
   border: none;
   list-style: none;
   padding: 0.2em 0.5em;
-  background-color: #dee8ea;
   color: #555;
   font-size: 0.8em;
   margin-right: 0.7em;
   margin-bottom: 0.5em;
+  background-color: #dee8ea;
 }
 
 .tags li:first-letter {
@@ -127,6 +128,20 @@ a:hover {
   }
 }
 
+.search {
+  margin-bottom: 1.5em;
+}
+
+.search select {
+  width: 100%;
+  border: 1px solid #ccc;
+  font-size: 0.8rem;
+  border-radius: 1px;
+  font-size: 1.3rem;
+  padding: 0.6em;
+  color: #555;
+}
+
 @media screen and (min-width:1280px) {
   .main {
     font-size: 0.85rem;
@@ -152,5 +167,16 @@ a:hover {
 
   .infos dd {
     flex-basis: auto;
+  }
+
+  .search {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+  }
+
+  .search select {
+    margin-bottom: 0.5em;
+    font-size: .8rem;
   }
 }
