@@ -58,6 +58,14 @@ a:hover {
   color: #fff;
 }
 
+p {
+  margin-bottom: 1em;
+}
+
+svg {
+  height: 0;
+}
+
 
 .infos {
   display: flex;
@@ -74,7 +82,7 @@ a:hover {
   list-style: none;
 }
 
-.main-list li {
+.main-list > li {
   padding: 1em;
   border: 3px solid #ccc;
   background-color: #fff;
@@ -83,7 +91,7 @@ a:hover {
   display: none;
 }
 
-.main-list li.show {
+.main-list > li.show {
   display: block;
 }
 
@@ -145,6 +153,12 @@ a:hover {
   font-size: 1.3rem;
   padding: 0.6em;
   color: #555;
+}
+
+footer ul {
+  list-style: none;
+  text-align: center;
+  margin-top: 5em;
 }
 
 @media screen and (min-width:1280px) {

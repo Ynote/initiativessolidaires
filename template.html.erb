@@ -77,7 +77,18 @@
         <% end %>
 
       </ul>
+
+      <footer>
+        <ul>
+          <li>
+            <a href="a-propos.html">
+              À propos
+            </a>
+          </li>
+        </ul>
+      </footer>
     </div>
+
 
     <svg aria-hidden="true">
       <symbol id="localisation" viewBox="0 0 16 16">
@@ -129,7 +140,7 @@
       select.addEventListener('change', function(e) {
         const category = select.options[select.selectedIndex].value
         const allElements = document
-          .querySelectorAll('.main-list li')
+          .querySelectorAll('.main-list > li')
 
         allElements.forEach(function(element) {
           element.classList.remove('show')
