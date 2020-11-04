@@ -20,7 +20,7 @@
       <h2>Inventaire collaboratif à travers la France</h2>
 
       <form class="search">
-        <select id="category-filter">
+        <select id="topic-filter">
           <option value="Tous">Filtrer par catégorie&hellip;</option>
           <option value="Soignant.e.s / personnel hospitalier">Soignant.e.s / Personnel hospitalier</option>
           <option value="Travailleur.euse.s du sexe">Travailleur.euse.s du sexe</option>
@@ -40,7 +40,7 @@
       <ul class="main-list">
 
         <% @inventory.each do |item| %>
-          <li class="show" data-category="<%= item['keywords'] %>">
+          <li class="show" data-topic="<%= item['keywords'] %>">
             <article>
               <h3><%= item['organization'] %></h3>
               <p><%= item['mission'] %></p>
@@ -152,13 +152,13 @@
     </svg>
 
     <script>
-      const select = document.getElementById('category-filter')
+      const select = document.getElementById('topic-filter')
       select.addEventListener('change', function(e) {
-        const category = select.options[select.selectedIndex].value
+        const topic = select.options[select.selectedIndex].value
         const allElements = document
           .querySelectorAll('.main-list li')
 
-        if (category == 'Tous') {
+        if (topic == 'Tous') {
           allElements.forEach(function(element) {
             element.classList.add('show')
           })
@@ -171,7 +171,7 @@
         })
 
         const elementsToShow = document
-          .querySelectorAll('[data-category="' + category + '"]');
+          .querySelectorAll('[data-topic="' + topic + '"]');
 
         elementsToShow.forEach(function(element) {
           element.classList.add('show')
