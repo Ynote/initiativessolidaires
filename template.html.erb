@@ -21,7 +21,7 @@
 
       <form class="search">
         <select id="category-filter">
-          <option class="placeholder">Filtrer par catégorie&hellip;</option>
+          <option value="Tous">Filtrer par catégorie&hellip;</option>
           <option value="Soignant.e.s / personnel hospitalier">Soignant.e.s / Personnel hospitalier</option>
           <option value="Travailleur.euse.s du sexe">Travailleur.euse.s du sexe</option>
         </select>
@@ -140,7 +140,15 @@
       select.addEventListener('change', function(e) {
         const category = select.options[select.selectedIndex].value
         const allElements = document
-          .querySelectorAll('.main-list > li')
+          .querySelectorAll('.main-list li')
+
+        if (category == 'Tous') {
+          allElements.forEach(function(element) {
+            element.classList.add('show')
+          })
+
+          return
+        }
 
         allElements.forEach(function(element) {
           element.classList.remove('show')
