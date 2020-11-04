@@ -2,15 +2,25 @@ require 'erb'
 require 'json'
 require_relative './string_monkey_patch.rb'
 
-
 class Inventory
-  FILENAME = 'inventory.json'
+  INVENTORY_FILENAME = 'inventory.json'
+  TOPICS_FILENAME = 'topics.json'
 
   attr_reader :inventory
+  attr_reader :topics
 
   def initialize
-    inventory_file = File.join(File.dirname(__FILE__), "./../#{FILENAME}")
+    inventory_file = File.join(
+      File.dirname(__FILE__),
+      "./../#{INVENTORY_FILENAME}"
+    )
+    topics_file = File.join(
+      File.dirname(__FILE__),
+      "./../#{TOPICS_FILENAME}"
+    )
+
     @inventory = JSON.parse(File.read(inventory_file))
+    @topics = JSON.parse(File.read(topics_file))
   end
 
   def get_binding

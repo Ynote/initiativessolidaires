@@ -110,7 +110,54 @@ svg {
   font-size: 0.8em;
   margin-right: 0.7em;
   margin-bottom: 0.5em;
+}
+
+.bg-e5e1ef {
+  background-color: #e5e1ef;
+}
+
+.bg-dee8ea {
   background-color: #dee8ea;
+}
+
+.bg-e6f0f2 {
+  background-color: #e6f0f2;
+}
+
+.bg-fcf5e3 {
+  background-color: #fcf5e3;
+}
+
+.bg-f9eadb {
+  background-color: #f9eadb;
+}
+
+.bg-ede9e6 {
+  background-color: #ede9e6;
+}
+
+.bg-f4e4e1 {
+  background-color: #f4e4e1;
+}
+
+.bg-f2e3ea {
+  background-color: #f2e3ea;
+}
+
+.bg-e3efde {
+  background-color: #e3efde;
+}
+
+.bg-dcd5f2 {
+  background-color: #dcd5f2;
+}
+
+.bg-c0e5ed {
+  background-color: #c0e5ed;
+}
+
+.bg-cff2f9 {
+  background-color: #cff2f9;
 }
 
 .tags li:first-letter {

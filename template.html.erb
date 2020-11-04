@@ -46,8 +46,8 @@
               <p><%= item['mission'] %></p>
 
               <ul class="tags">
-                <% item['keywords'].split('/').each do |keyword| %>
-                  <li>
+                <% @topics[item['keywords']]['keywords'].each do |keyword| %>
+                  <li class="bg-<%= @topics[item['keywords']]['color']%>">
                     <%= keyword %>
                   </li>
                 <% end %>
