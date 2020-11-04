@@ -3,7 +3,8 @@
 Ce projet propose une page recensant les cagnottes et initiatives solidaires à
 travers la France. Il s'appuie sur le travail d'inventaire de
 [@chloe.madesta](https://www.instagram.com/chloe.madesta/) et
-[@queergouine](https://www.instagram.com/queergouine/) est alimenté par toute une communauté de façon collaborative.
+[@queergouine](https://www.instagram.com/queergouine/) et est alimenté par toute
+une communauté de façon collaborative.
 
 Pour en savoir plus sur l'origine de cet inventaire, vous pouvez consulter [le
 post sur le profil de @chloe.madesta](https://www.instagram.com/p/CHDOcDygLV-/)
@@ -17,9 +18,10 @@ sur Instagram.
 Ce projet propose d'étendre l'accessibilité du Google Sheet initié par
 [@chloe.madesta](https://www.instagram.com/chloe.madesta/) sur les internets.
 En effet, dans l'optique de se soustraire à la domination des GAFAM sur le web,
-rendre des contenus riches et diversifiés, présents sur ces plateformes,
-disponibles sur des pages web, navigables et accessibles, est extrêmement
-important.
+il est extrêmement important de rendre disponibles des contenus riches et
+diversifiés, présents sur ces plateformes, sur des pages web, navigables et
+accessibles par toutes et tous.
+
 
 ## Développement
 
