@@ -19,7 +19,7 @@ class Inventory
       "./../src/#{TOPICS_FILENAME}"
     )
 
-    @inventory = JSON.parse(File.read(inventory_file))
+    @inventory = JSON.parse(File.read(inventory_file)).shuffle
     @topics = JSON.parse(File.read(topics_file))
   end
 
@@ -32,6 +32,6 @@ template_file = File.join(File.dirname(__FILE__), "./../src/template.html.erb")
 template = File.read(template_file)
 
 File.open('dist/index.html', 'w') do |f|
-  output = ERB.new(template).result(Inventory.new().get_binding)
+  output = ERB.new(template).result(Inventory.new.get_binding)
   f.write output
 end
