@@ -59,7 +59,7 @@ Pour générer la page :
 ruby tasks/generate
 ```
 
-## Itérations
+## Prochaines étapes
 - Générer le fichier JSON automatiquement à partir du Google Sheet
 - Automatiser la génération du fichier JSON à une fois par jour
 - Ajouter un filtre géographique
@@ -71,8 +71,13 @@ N'hésitez pas à contribuer sous forme de pull requests et issues. Des idées d
 
 Ce dépôt est sous la licence [Hippocratic License](https://firstdonoharm.dev/)
 et se veut être un lieu ouvert et bienveillant de collaboration. Les personnes
-voulant contribuer sont invitées à suivre le [Contributor
-Covenant](https://www.contributor-covenant.org/fr/version/1/4/code-of-conduct/) code of conduct.
+voulant contribuer sont invitées à suivre la charte code de conduite du [Contributor
+Covenant](https://www.contributor-covenant.org/fr/version/1/4/code-of-conduct/).
+
+## Remerciements
+
+Je remercie [@sunny](https://github.com/sunny/) pour ses revues de code, son
+aide et son soutien pour la création de ce site.
 
 ## Ressources
 
