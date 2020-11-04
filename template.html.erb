@@ -54,6 +54,8 @@
               </ul>
 
               <dl class="infos">
+
+                <% if item['localization'].present? %>
                 <dt class="visually-hidden">Périmètre d'action :</dt>
                 <dd>
                   <svg class="icon" aria-hidden="true">
@@ -61,26 +63,30 @@
                   </svg>
                   <%= item['localization'] %>
                 </dd>
+                <% end %>
+
+                <% if item['website'].present? %>
                 <dt class="visually-hidden">Lien :</dt>
                 <dd>
-                  <% if item['website'].present? %>
-                    <svg class="icon" aria-hidden="true">
-                      <use xlink:href="#geography"></use>
-                    </svg>
-                  <% end %>
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#geography"></use>
+                  </svg>
                   <a href="<%= item['website'] %>">
                     <%= item['website'] %>
                   </a>
                 </dd>
+                <% end %>
+
+                <% if item['contact'].present? %>
                 <dt class="visually-hidden">Contact :</dt>
                 <dd>
-                  <% if item['contact'].present? %>
-                    <svg class="icon" aria-hidden="true">
-                      <use xlink:href="#pencil"></use>
-                    </svg>
-                  <% end %>
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#pencil"></use>
+                  </svg>
                   <%= item['contact'] %>
                 </dd>
+                <% end %>
+
               </dl>
             </article>
           </li>
