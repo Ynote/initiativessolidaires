@@ -46,5 +46,501 @@
     "website": "https://www.lepotcommun.fr/pot/9dket8gj",
     "contact": "@tapotepute",
     "keywords": "Travailleur.euse.s du sexe"
+  },
+  {
+    "organization": "Association Cabiria",
+    "mission": "Soutien aux TDS de Lyon",
+    "localization": "Lyon",
+    "website": "https://www.helloasso.com/associations/association-cabiria/formulaires/1/widget",
+    "contact": "",
+    "keywords": "Travailleur.euse.s du sexe"
+  },
+  {
+    "organization": "Association Grisélidis",
+    "mission": "Soutien aux TDS de Toulouse",
+    "localization": "Toulouse",
+    "website": "https://www.paypal.com/pools/c/8tBPDtd7iJ",
+    "contact": "@assogriselidis",
+    "keywords": "Travailleur.euse.s du sexe"
+  },
+  {
+    "organization": "Osmose / Tds_vs_Grindr",
+    "mission": "Liste de liens mis à jour pour aider les TDS",
+    "localization": "France entière & Belgique",
+    "website": "https://allmylinks.com/awen-osmose",
+    "contact": "@tds_vs_grindrr",
+    "keywords": "Travailleur.euse.s du sexe"
+  },
+  {
+    "organization": "Humans for Women",
+    "mission": "Aide sociale et juridique aux personnes exilées. Cherche des bénévoles pour donner des cours de français. Cagnotte ouverte également.",
+    "localization": "Paris",
+    "website": "http://www.humansforwomen.org/faire-un-don-1",
+    "contact": "@humansforwomen",
+    "keywords": "Sans-papiers / migrant.e.s / mineur.e.s isolé.e.s / sans-domicile fixe / travailleur.ses précaires"
+  },
+  {
+    "organization": "La Fourmillière",
+    "mission": "Cherche des bénévoles pour donner des cours de français aux personnes exilées.",
+    "localization": "France entière - cours en ligne",
+    "website": "https://www.facebook.com/groups/981763832157420",
+    "contact": "",
+    "keywords": "Sans-papiers / migrant.e.s / mineur.e.s isolé.e.s / sans-domicile fixe / travailleur.ses précaires"
+  },
+  {
+    "organization": "Restos du coeur",
+    "mission": "Distribution de repas. Bénévolat possible en confinement. Possibilité de donner jusqu'à 19 euros de tickets resto par jour sur le site.",
+    "localization": "France entière",
+    "website": "https://www.restosducoeur.org/devenir-benevole/",
+    "contact": "",
+    "keywords": "Sans-papiers / migrant.e.s / mineur.e.s isolé.e.s / sans-domicile fixe / travailleur.ses précaires"
+  },
+  {
+    "organization": "Association Solidarité Migrants",
+    "mission": "Cherche bénévoles pour maraudes, préparation et distribution de repas pour les migrant.e.s",
+    "localization": "Paris et Saint-Denis",
+    "website": "https://www.facebook.com/permalink.php?story_fbid=1577857292415037&id=598228360377940",
+    "contact": "",
+    "keywords": "Sans-papiers / migrant.e.s / mineur.e.s isolé.e.s / sans-domicile fixe / travailleur.ses précaires"
+  },
+  {
+    "organization": "BAAM (Bureau d'Accueil et d'Accompagnement pour les Migrants)",
+    "mission": "Accompagnement personnes sans papiers et demandeur.euses d'asile.",
+    "localization": "France entière",
+    "website": "https://baamasso.org/fr/faire-un-don/",
+    "contact": "https://baamasso.org/fr/faire-un-don/",
+    "keywords": "Sans-papiers / migrant.e.s / mineur.e.s isolé.e.s / sans-domicile fixe / travailleur.ses précaires"
+  },
+  {
+    "organization": "La Cimade",
+    "mission": "Accompagnement personnes sans papiers et demandeur.euses d'asile. Possibilité de faire du bénévolat (accompagnement juridique et administratif notamment)",
+    "localization": "France entière",
+    "website": "https://www.lacimade.org/agir/faire-un-don/",
+    "contact": "",
+    "keywords": "Sans-papiers / migrant.e.s / mineur.e.s isolé.e.s / sans-domicile fixe / travailleur.ses précaires"
+  },
+  {
+    "organization": "Mouvement #poureux",
+    "mission": "Distribution de paniers repas que les particuliers peuvent commander directement en ligne. A destination des sans abri.",
+    "localization": "Paris, Toulouse, Lyon, Nancy, Lille, Strasbourg",
+    "website": "https://www.poureuxlemouv.com/",
+    "contact": "",
+    "keywords": "Sans-papiers / migrant.e.s / mineur.e.s isolé.e.s / sans-domicile fixe / travailleur.ses précaires"
+  },
+  {
+    "organization": "Grévistes de l'hôtel Ibis de Batignolles",
+    "mission": "Cagnotte de soutien pour les femmes de chambre grévistes de l'hôtel Ibis à Batignolles",
+    "localization": "Paris",
+    "website": "https://www.papayoux-solidarite.com/fr/collecte/caisse-de-soutien-a-la-lutte-ibis-batignolles?fbclid=IwAR2V23roCMloC6R6cZIorfLCzl5fo7CFPyAK5see0HC4pPiiU1IsM449sS4",
+    "contact": "",
+    "keywords": "Sans-papiers / migrant.e.s / mineur.e.s isolé.e.s / sans-domicile fixe / travailleur.ses précaires"
+  },
+  {
+    "organization": "C.A.A.N",
+    "mission": "Cagnotte pour les migrant.e.s et réfugié.e.s du squat de Saint-Denis",
+    "localization": "Saint-Denis",
+    "website": "https://www.leetchi.com/c/collecte-pour-les-migrant-e-s-et-refugi-e-e-s-dun-squat-de-st-denis?fbclid=IwAR06oH-I89k_oI4usrXO3Qjg0zMR4O_VAUtJReqgoOMb3tT5pAyVdsau38E",
+    "contact": "",
+    "keywords": "Sans-papiers / migrant.e.s / mineur.e.s isolé.e.s / sans-domicile fixe / travailleur.ses précaires"
+  },
+  {
+    "organization": "Refugee Community Kitchen",
+    "mission": "Repas servis aux migrant.e.s",
+    "localization": "Calais",
+    "website": "https://www.refugeecommunitykitchen.com/donatemoney",
+    "contact": "",
+    "keywords": "Sans-papiers / migrant.e.s / mineur.e.s isolé.e.s / sans-domicile fixe / travailleur.ses précaires"
+  },
+  {
+    "organization": "7dreams",
+    "mission": "Aide alimentaire et maraudes à destination des personnes sans domicile",
+    "localization": "Saint-Denis",
+    "website": "https://www.facebook.com/7dreams93/",
+    "contact": "@7dreams",
+    "keywords": "Sans-papiers / migrant.e.s / mineur.e.s isolé.e.s / sans-domicile fixe / travailleur.ses précaires"
+  },
+  {
+    "organization": "Asso Watizat",
+    "mission": "Informer et orienter les personnes à la rue pendant le confinement. Aide les 2000 personnes exilées vivant actuellement sur le camp de Porte de Paris.",
+    "localization": "Paris",
+    "website": "https://watizat.org/soutenir/#dons",
+    "contact": "@assowatizat",
+    "keywords": "Sans-papiers / migrant.e.s / mineur.e.s isolé.e.s / sans-domicile fixe / travailleur.ses précaires"
+  },
+  {
+    "organization": "Utopia 56",
+    "mission": "Accueil et protection des mineur.e.s non accompagné.e.s et des personnes exilées. Recherche des appartements vides pour loger les familles.",
+    "localization": "Paris, Calais, Grande-Synthe, Lille, Lorient, Rennes, Toulouse,Tours",
+    "website": "http://www.utopia56.com/fr/devenir-benevole-0",
+    "contact": "contact@utopia56.com",
+    "keywords": "Sans-papiers / migrant.e.s / mineur.e.s isolé.e.s / sans-domicile fixe / travailleur.ses précaires"
+  },
+  {
+    "organization": "Collectif Kabako",
+    "mission": "Accueil et protection des mineur.e.s non accompagné.e.s",
+    "localization": "Bordeaux",
+    "website": "http://cotizup.com/kabako",
+    "contact": "@kabako_33",
+    "keywords": "Sans-papiers / migrant.e.s / mineur.e.s isolé.e.s / sans-domicile fixe / travailleur.ses précaires"
+  },
+  {
+    "organization": "Sasha Anxiety",
+    "mission": "Discord d'entraide et de soutien en non mixité transféminine",
+    "localization": "France entière",
+    "website": "",
+    "contact": "Envoyer un DM à @sasha.anxiety pour accéder au discord",
+    "keywords": "Personnes LGBTQIA+"
+  },
+  {
+    "organization": "ARDHIS (Association pour la reconnaissance des droits des personnes homosexuelles et trans à l'immigration et au séjour)",
+    "mission": "Accueil et accompagnement de personnes migrantes LGBTQIA+",
+    "localization": "Paris",
+    "website": "https://www.helloasso.com/associations/ardhis/formulaires/1",
+    "contact": "https://ardhis.org/",
+    "keywords": "Personnes LGBTQIA+"
+  },
+  {
+    "organization": "2msg Minorités Migrations",
+    "mission": "Achats de nourriture, médicaments, forfaits de téléphone, aide au logement pour les personnes LGBTQIA+ migrantes",
+    "localization": "Lyon",
+    "website": "https://www.helloasso.com/associations/2msg-migrations-minorites-sexuelles-et-de-genre/formulaires/1?fbclid=IwAR2X_tiesweZV9zt33xwINmWwePKqMOoMyemJUiYRWTZ6OYOWPveFTAiwN4",
+    "contact": "https://asso2msg.org/",
+    "keywords": "Personnes LGBTQIA+"
+  },
+  {
+    "organization": "cagnotte autogérée par un collectif bordelais",
+    "mission": "Cette cagnotte solidaire redistribue ses fonds aux personnes LGBTIQ* de Bordeaux et sa région qui en font la demande.",
+    "localization": "Bordeaux",
+    "website": "https://www.paypal.com/pools/c/8nA2G66rJc",
+    "contact": "sur facebook : Solidarité Covid - Entraide courses à Bordeaux - queer / handi",
+    "keywords": "Personnes LGBTQIA+"
+  },
+  {
+    "organization": "2 artistes trans et réfugiées ",
+    "mission": "Cagnotte d'urgence pour soutenir deux personnes trans et réfugiées travaillant dans le milieu du spectacle ",
+    "localization": "",
+    "website": "https://www.paypal.com/pools/c/8tRJmbk4Ln",
+    "contact": "@perllaranielly et @lindademorrir",
+    "keywords": "Personnes LGBTQIA+"
+  },
+  {
+    "organization": "Acceptess-T - FAST (Fonds d'Action Sociale Trans)",
+    "mission": "Cagnotte d'urgence pour les personnes trans les plus exposé.e.s à l'épidémie",
+    "localization": "France entière",
+    "website": "https://www.helloasso.com/associations/acceptess-t/formulaires/2",
+    "contact": "",
+    "keywords": "Personnes LGBTQIA+"
+  },
+  {
+    "organization": "Recommandations scientifiques",
+    "mission": "Guide de recommandation d'équilibre psy en période de covid",
+    "localization": "",
+    "website": "https://www.isbd.org/Files/Admin/COVID_PSA/COVID_PSA_French.pdf",
+    "contact": "",
+    "keywords": "Personnes en situation de handicap ou malades ou neuroA"
+  },
+  {
+    "organization": "Association Happyrologie",
+    "mission": "Ecoute bénévole à destination des personnes en difficulté psy.",
+    "localization": "France entière",
+    "website": "https://www.aide-sociale.fr/association-happyrologie",
+    "contact": "pauline@happyrologie.com",
+    "keywords": "Personnes en situation de handicap ou malades ou neuroA"
+  },
+  {
+    "organization": "Paye Ta Psychophobie",
+    "mission": "Post qui recense les personnes (attention : non formées) disponibles pour parler/créer du lien pendant la période de confinement, à destination des personnes neuroA.",
+    "localization": "France entière",
+    "website": "https://www.instagram.com/p/CG-pnB9AAFv/?igshid=thg2hb7hefkh",
+    "contact": "@payetapsychophobie",
+    "keywords": "Personnes en situation de handicap ou malades ou neuroA"
+  },
+  {
+    "organization": "Association \"je donne ma perruque\"",
+    "mission": "Fait des dons de perruques aux personnes souffrant d'alopécie ou de pelade (suite à chimio par exemple). Prend les dons",
+    "localization": "France entière",
+    "website": "https://www.helloasso.com/associations/je-donne-ma-perruque",
+    "contact": "",
+    "keywords": "Personnes en situation de handicap ou malades ou neuroA"
+  },
+  {
+    "organization": "Créateurices - Recensement par Polyvalence",
+    "mission": "Recensement créateurices à soutenir en achetant leurs produits",
+    "localization": "France entière",
+    "website": "https://www.facebook.com/assopolyvalence",
+    "contact": "",
+    "keywords": "Petits commerces / créateurices"
+  },
+  {
+    "organization": "Créateurices",
+    "mission": "Rencensement de createurices pour leur donner de la visibilité",
+    "localization": "France entière",
+    "website": "",
+    "contact": "@jesoutiensmoncreateur",
+    "keywords": "Petits commerces / créateurices"
+  },
+  {
+    "organization": "Bertille Isabeau",
+    "mission": "Vente de lingerie inclusive",
+    "localization": "France entière et à l'étranger",
+    "website": "www.bertilleisabeau.com",
+    "contact": "@bertilleisabeau",
+    "keywords": "Petits commerces / créateurices"
+  },
+  {
+    "organization": "Soutien des libraires",
+    "mission": "Commander et réserver des livres chez des libraires indépendants.",
+    "localization": "Paris",
+    "website": "https://www.librairiesindependantes.com/",
+    "contact": "",
+    "keywords": "Libraires"
+  },
+  {
+    "organization": "Soutien des libraires",
+    "mission": "Commander et réserver des livres chez des libraires indépendants.",
+    "localization": "Paris",
+    "website": "http://parislibrairie.fr",
+    "contact": "",
+    "keywords": "Libraires"
+  },
+  {
+    "organization": "Soutien des libraires",
+    "mission": "Commander et réserver des livres chez des libraires indépendants.    Livraison ou Click & Collect",
+    "localization": "Paris",
+    "website": "https://www.librest.com/",
+    "contact": "",
+    "keywords": "Libraires"
+  },
+  {
+    "organization": "Soutien des libraires",
+    "mission": "Protocole pour soutenir vos libraires",
+    "localization": "France entière",
+    "website": "https://www.instagram.com/p/CHAavg-Ak8B/?igshid=1kqfi5raujubv",
+    "contact": "@ad_weirdo",
+    "keywords": "Libraires"
+  },
+  {
+    "organization": "Soutien des libraires",
+    "mission": "Association régionale de librairies indépendantes. Achat d'ebook ou Click & Collect",
+    "localization": "Auverge-Rhône-Alpes",
+    "website": "https://www.chez-mon-libraire.fr/",
+    "contact": "",
+    "keywords": "Libraires"
+  },
+  {
+    "organization": "Soutien des libraires",
+    "mission": "Site de vente en ligne à retirer dans une librairie physique",
+    "localization": "France entière",
+    "website": "https://www.lalibrairie.com/",
+    "contact": "",
+    "keywords": "Libraires"
+  },
+  {
+    "organization": "Livres recyclés",
+    "mission": "Service gratuit de récupération de dons de livres. Service d'achats et de livraison à domicile de livres de seconde main",
+    "localization": "France entière",
+    "website": "https://www.recyclivre.com",
+    "contact": "",
+    "keywords": "Libraires"
+  },
+  {
+    "organization": "Collages Féminicides Paris",
+    "mission": "Prêt temporaire de logement pour victimes de violences",
+    "localization": "Ile de France",
+    "website": "@collages_feminicides_paris",
+    "contact": "collages.feminicides.paris@gmail.com",
+    "keywords": "Personnes victimes de violences intra-familiales et conjugales"
+  },
+  {
+    "organization": "Groupe nationaux de collages (à voir directement avec chaque ville s'iels ont lancé une initiative propre)",
+    "mission": "Prêt temporaire de logement pour victimes de violences",
+    "localization": "France entière",
+    "website": "@collages_feminicides_paris",
+    "contact": "Story à la une \"où agir\" de CFP",
+    "keywords": "Personnes victimes de violences intra-familiales et conjugales"
+  },
+  {
+    "organization": "Commander de la nourriture dans vos restos de quartier",
+    "mission": "Appeler directement les resto avant de passer par Deliveroo et autres pour leur éviter la commission de 30% prise par les sites",
+    "localization": "France entière",
+    "website": "",
+    "contact": "",
+    "keywords": "Restaurants/bar"
+  },
+  {
+    "organization": "Commande de plats en avance via La Fourchette",
+    "mission": "",
+    "localization": "",
+    "website": "",
+    "contact": "",
+    "keywords": "Restaurants/bar"
+  },
+  {
+    "organization": "Si pas d'autre solution, commander via les sites de livraison (Deliveroo, Uber Eats, etc.)",
+    "mission": "dans ce cas là ne pas hésiter à donner des pourboire en cash aux livreur.ses",
+    "localization": "",
+    "website": "",
+    "contact": "",
+    "keywords": "Restaurants/bar"
+  },
+  {
+    "organization": "Nanténé Traoré",
+    "mission": "vente tirage photo ",
+    "localization": "France entière",
+    "website": "https://www.nantenetraore.com/shop",
+    "contact": "insta : @nantene_traore",
+    "keywords": "Photographes à soutenir"
+  },
+  {
+    "organization": "Tay_calenda",
+    "mission": "vente tirage photo / commande",
+    "localization": "tirage : France entière / international commande : France ou Italie mais compte défraiment",
+    "website": "http://taycalenda.com/",
+    "contact": "insta : tay_calenda",
+    "keywords": "Photographes à soutenir"
+  },
+  {
+    "organization": "Chang_martin_",
+    "mission": "commande et vente tirage",
+    "localization": "déplacement région IDF Paris et Banlieu pour les commande ",
+    "website": "",
+    "contact": "insta : @cgang_martin_ mail : by.chang.martin@gmail.com",
+    "keywords": "Photographes à soutenir"
+  },
+  {
+    "organization": "Salomé Judith",
+    "mission": "réservation en avance de séance post confinement, carte cadeau de prestation à offrir",
+    "localization": "commande : Bordeaux et Paris (autres villes accessible en TGV aussi possible)",
+    "website": "http://www.sallytm.com/",
+    "contact": "insta : sallytm",
+    "keywords": "Photographes à soutenir"
+  },
+  {
+    "organization": "Nanténé Traoré",
+    "mission": "vente tirage photo ",
+    "localization": "France entière",
+    "website": "https://www.nantenetraore.com/shop",
+    "contact": "insta : @nantene_traore",
+    "keywords": "Photographes à soutenir"
+  },
+  {
+    "organization": "Barbara Butch",
+    "mission": "soirée le samedi soir sur zoom",
+    "localization": "monde entier",
+    "website": "insta : @lappartchezmoi @barbarabutch",
+    "contact": "",
+    "keywords": "Secteur musical"
+  },
+  {
+    "organization": "Takeninake",
+    "mission": "vente album numérique ",
+    "localization": "monde entier",
+    "website": "https://takeninake.bandcamp.com/",
+    "contact": "insta : @takeninake",
+    "keywords": "Secteur musical"
+  },
+  {
+    "organization": "Géraldine Joséphine",
+    "mission": "illustratice / designeuse de motif",
+    "localization": "monde entier",
+    "website": "boutique en ligne : lien à venir",
+    "contact": "@geraldine.josephine mail : hello@geraldinejosephine.com ",
+    "keywords": "Illustration et goodies"
+  },
+  {
+    "organization": "Sahara_azzeg",
+    "mission": "vente de linogravure, de coeur et rond au couleur de la pride et autres .... Toutes les infos à retrouver sur insta dans sa story à la une : me soutenir",
+    "localization": "dans le monde (prix du frais de port à rajouter)",
+    "website": "",
+    "contact": "@sahara_azzeg / facebook : Sahara Azzeg",
+    "keywords": "Illustration et goodies"
+  },
+  {
+    "organization": "Anais Alvarez",
+    "mission": "vente de portrait / illustration / autres",
+    "localization": "envoi en France entière post confinement pour les achats effectués durant cette periode",
+    "website": "https://anaisalvarezpro.wixsite.com/book",
+    "contact": "@_alvais mail : anaisalvarez.contact@gmail.com",
+    "keywords": "Illustration et goodies"
+  },
+  {
+    "organization": "Les folies passagères",
+    "mission": "Vente de livres, agendas, zines, prints, stickers, badges, cahier de note/à colorier, sacs, tee-shirt, marques pages féministes et inclusifs",
+    "localization": "Envoi à l'international",
+    "website": "",
+    "contact": "@lesfoliespassageres",
+    "keywords": "Illustration et goodies"
+  },
+  {
+    "organization": "Sapphosutra",
+    "mission": "Vente de prints et affiches queer inclusives",
+    "localization": "",
+    "website": "",
+    "contact": "",
+    "keywords": "Illustration et goodies"
+  },
+  {
+    "organization": "Féminise Ta Culture",
+    "mission": "Vente de linogravures féministes et queer",
+    "localization": "",
+    "website": "",
+    "contact": "@feminisetaculture",
+    "keywords": "Illustration et goodies"
+  },
+  {
+    "organization": "Aelnaute",
+    "mission": "",
+    "localization": "",
+    "website": "",
+    "contact": "@aelnaute",
+    "keywords": "Illustration et goodies"
+  },
+  {
+    "organization": "L'Encromancienne (tatoueuse)",
+    "mission": "",
+    "localization": "",
+    "website": "",
+    "contact": "@l.encromancienne",
+    "keywords": "Illustration et goodies"
+  },
+  {
+    "organization": "Vogue Felice",
+    "mission": "",
+    "localization": "",
+    "website": "",
+    "contact": "@voguefelice",
+    "keywords": "Illustration et goodies"
+  },
+  {
+    "organization": "Coco Vagina (tatoueuse)",
+    "mission": "",
+    "localization": "",
+    "website": "",
+    "contact": "@coco_vagina",
+    "keywords": "Illustration et goodies"
+  },
+  {
+    "organization": "Alphielectron",
+    "mission": "Vente de linogravures (commandes ou modèles)",
+    "localization": "",
+    "website": "",
+    "contact": "@alphielectron",
+    "keywords": "Illustration et goodies"
+  },
+  {
+    "organization": "Luje",
+    "mission": "sérigraphies, originaux, totebags et bientôt des vêtements",
+    "localization": "France entière, envoi ok pendant le confinement, remise en main propre sur Nantes post confinement",
+    "website": "https://www.etsy.com/fr/shop/Lujequiroule?ref=search_shop_redirect",
+    "contact": "insta : @lujequiroule fb : Lujequiroule",
+    "keywords": "Illustration et goodies"
+  },
+  {
+    "organization": "Clotide Auboeuf - Domininguez",
+    "mission": "vente illustration, réalisation de commande personnalisée",
+    "localization": "France entière ",
+    "website": "https://www.paypal.com/paypalme/clotildead?locale.x=fr_FR",
+    "contact": "insta : clotide_bfdmngz",
+    "keywords": "Illustration et goodies"
   }
 ]
