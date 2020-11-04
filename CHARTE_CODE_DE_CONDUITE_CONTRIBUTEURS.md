@@ -60,7 +60,7 @@ projet.
 
 Les cas de comportements abusifs, harcelants ou tout autre comportement
 inacceptable peuvent être signalés en contactant l'équipe du projet à
-[dev@ynote.hk]. Toutes les plaintes seront examinées et étudiées
+dev@ynote.hk. Toutes les plaintes seront examinées et étudiées
 et se traduiront par une réponse appropriée aux
 circonstances. L'équipe du projet s'engage à garder confidentielles les
 informations de la personne qui remonte un incident. Plus de détails sur
