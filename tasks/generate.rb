@@ -12,11 +12,11 @@ class Inventory
   def initialize
     inventory_file = File.join(
       File.dirname(__FILE__),
-      "./../#{INVENTORY_FILENAME}"
+      "./../src/#{INVENTORY_FILENAME}"
     )
     topics_file = File.join(
       File.dirname(__FILE__),
-      "./../#{TOPICS_FILENAME}"
+      "./../src/#{TOPICS_FILENAME}"
     )
 
     @inventory = JSON.parse(File.read(inventory_file))
@@ -28,7 +28,7 @@ class Inventory
   end
 end
 
-template_file = File.join(File.dirname(__FILE__), "./../template.html.erb")
+template_file = File.join(File.dirname(__FILE__), "./../src/template.html.erb")
 template = File.read(template_file)
 
 File.open('dist/index.html', 'w') do |f|
