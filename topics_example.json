@@ -1,0 +1,17 @@
+{
+  "Teatime": {
+    "label": "Teatime with the Mad Hatter",
+    "color": "fcf5e3",
+    "keywords": ["tea", "biscuit", "party"]
+  },
+  "Madness": {
+    "label": "Madness in Wonderland",
+    "color": "f9eadb",
+    "keywords": ["madness", "happy"]
+  },
+  "Cards": {
+    "label": "Playing with cards",
+    "color": "f4e4e1",
+    "keywords": ["cards", "royalty", "time"]
+  }
+}

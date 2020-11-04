@@ -3,438 +3,472 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-    <title>Inventaire collaboratif des cagnottes et initiatives solidaires à
-    travers la France</title>
+    <title>Inventaire collaboratif des cagnottes et initiatives solidaires à travers la France</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Inventaire collaboratif des cagnottes et initiatives solidaires à travers la France.">
-     <link
+    <meta name="description" content="Ce projet propose une page recensant les cagnottes et initiatives solidaires à travers la France. Il s'appuie sur le travail d'inventaire de @chloe.madesta et @queergouine et est alimenté par toute une communauté de façon collaborative.">
+
+    <!-- Facebook meta -->
+    <meta property="og:title" content="Inventaire collaboratif des cagnottes et initiatives solidaires à travers la France"/>
+    <meta property="og:description" content="Ce projet propose une page recensant les cagnottes et initiatives solidaires à travers la France. Il s'appuie sur le travail d'inventaire de @chloe.madesta et @queergouine et est alimenté par toute une communauté de façon collaborative.">
+    <meta property="og:locale" content="fr_FR"/>
+
+    <!-- TODO -->
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content=""/>
+    <!-- end TODO -->
+
+    <!-- Twitter meta -->
+    <meta name="twitter:card" content="summary" />
+
+    <link
      href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;700&display=swap"
      rel="stylesheet">
     <link href="main.css" rel="stylesheet" type="text/css" />
   </head>
+
   <body>
     <div class="main">
       <h1>Cagnottes et initiatives solidaires</h1>
       <h2>Inventaire collaboratif à travers la France</h2>
 
-      <nav><a href="/">À propos</a></nav>
+      <nav><a href="a-propos.html">À propos</a></nav>
 
       <form class="search">
-        <select id="category-filter">
-          <option value="Tous">Filtrer par catégorie&hellip;</option>
-          <option value="Plantes">Plantes</option>
-          <option value="Champignons">Champignons</option>
-          <option value="Vie collective">Vie collective</option>
+        <select id="topic-filter">
+          <option value="Tous">Filtrer par thématique&hellip;</option>
+          
+            <option value="Teatime">Teatime with the Mad Hatter</option>
+          
+            <option value="Madness">Madness in Wonderland</option>
+          
+            <option value="Cards">Playing with cards</option>
+          
         </select>
       </form>
 
       <ul class="main-list">
 
-
-          <li class="show" data-category="Vie collective">
+        
+          <li class="show" data-topic="Teatime">
             <article>
-              <h3>Exemple "Vie collective"</h3>
-              <p>Vestibulum laoreet sit amet sapien id ultricies. Aenean lacus
-              elementum condimentum. Nunc vel hendrerit nibh. Sed in tortor eget
-              ligula luctus rhoncus. </p>
+              <h3>Mad Hatter</h3>
+              <p>Yes, that's it! Said the Hatter with a sigh, it's always tea time.</p>
 
               <ul class="tags">
-
-                  <li>
-                    hendrerit
+                
+                  <li class="bg-fcf5e3">
+                    tea
                   </li>
-
-                  <li>
-                    ultricies
+                
+                  <li class="bg-fcf5e3">
+                    biscuit
                   </li>
-
-                  <li>
-                    Vestibulum laoreet
+                
+                  <li class="bg-fcf5e3">
+                    party
                   </li>
-
+                
               </ul>
 
               <dl class="infos">
+
+                
                 <dt class="visually-hidden">Périmètre d'action :</dt>
                 <dd>
                   <svg class="icon" aria-hidden="true">
                     <use xlink:href="#localisation"></use>
                   </svg>
-                  France entière
+                  Wonderland
                 </dd>
+                
+
+                
                 <dt class="visually-hidden">Lien :</dt>
                 <dd>
-
-                    <svg class="icon" aria-hidden="true">
-                      <use xlink:href="#geography"></use>
-                    </svg>
-
-                  <a href="https://example.com">
-                    https://example.com
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#geography"></use>
+                  </svg>
+                  <a href="https://wonder.land">
+                    https://wonder.land
                   </a>
                 </dd>
+                
+
+                
                 <dt class="visually-hidden">Contact :</dt>
                 <dd>
-                    <svg class="icon" aria-hidden="true">
-                      <use xlink:href="#pencil"></use>
-                    </svg>
-                    hello@example.com
-
-
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#pencil"></use>
+                  </svg>
+                  hello@wonder.land
                 </dd>
+                
+
               </dl>
             </article>
           </li>
-
-
-          <li class="show" data-category="Vie collective">
+        
+          <li class="show" data-topic="Madness">
             <article>
-              <h3>Exemple "Vie collective"</h3>
-              <p>Vestibulum laoreet sit amet sapien id ultricies. Aenean lacus
-              elementum condimentum. Nunc vel hendrerit nibh. Sed in tortor eget
-              ligula luctus rhoncus. </p>
+              <h3>Alice</h3>
+              <p>Have i gone mad? I'm afraid so, but let me tell you something, the best people usualy are.</p>
 
               <ul class="tags">
-
-                  <li>
-                    hendrerit
+                
+                  <li class="bg-f9eadb">
+                    madness
                   </li>
-
-                  <li>
-                    ultricies
+                
+                  <li class="bg-f9eadb">
+                    happy
                   </li>
-
-                  <li>
-                    Vestibulum laoreet
-                  </li>
-
+                
               </ul>
 
               <dl class="infos">
+
+                
                 <dt class="visually-hidden">Périmètre d'action :</dt>
                 <dd>
                   <svg class="icon" aria-hidden="true">
                     <use xlink:href="#localisation"></use>
                   </svg>
-                  France entière
+                  Wonderland
                 </dd>
+                
+
+                
                 <dt class="visually-hidden">Lien :</dt>
                 <dd>
-
-                    <svg class="icon" aria-hidden="true">
-                      <use xlink:href="#geography"></use>
-                    </svg>
-
-                  <a href="https://example.com">
-                    https://example.com
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#geography"></use>
+                  </svg>
+                  <a href="https://wonder.land">
+                    https://wonder.land
                   </a>
                 </dd>
+                
+
+                
                 <dt class="visually-hidden">Contact :</dt>
                 <dd>
-                    <svg class="icon" aria-hidden="true">
-                      <use xlink:href="#pencil"></use>
-                    </svg>
-                    hello@example.com
-
-
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#pencil"></use>
+                  </svg>
+                  hello@wonder.land
                 </dd>
+                
+
               </dl>
             </article>
           </li>
-
-          <li class="show" data-category="Plantes">
+        
+          <li class="show" data-topic="Madness">
             <article>
-              <h3>Exemple "Plantes"</h3>
-              <p>Vestibulum laoreet sit amet sapien id ultricies. Aenean lacus
-              elementum condimentum. Nunc vel hendrerit nibh. Sed in tortor eget
-              ligula luctus rhoncus. </p>
+              <h3>Cheshire cat</h3>
+              <p>we’re all mad here. I’m mad. You’re mad.</p>
 
               <ul class="tags">
-
-                  <li>
-                    hendrerit
+                
+                  <li class="bg-f9eadb">
+                    madness
                   </li>
-
-                  <li>
-                    ultricies
+                
+                  <li class="bg-f9eadb">
+                    happy
                   </li>
-
-                  <li>
-                    Vestibulum laoreet
-                  </li>
-
+                
               </ul>
 
               <dl class="infos">
+
+                
                 <dt class="visually-hidden">Périmètre d'action :</dt>
                 <dd>
                   <svg class="icon" aria-hidden="true">
                     <use xlink:href="#localisation"></use>
                   </svg>
-                  France entière
+                  Wonderland
                 </dd>
+                
+
+                
                 <dt class="visually-hidden">Lien :</dt>
                 <dd>
-
-                    <svg class="icon" aria-hidden="true">
-                      <use xlink:href="#geography"></use>
-                    </svg>
-
-                  <a href="https://example.com">
-                    https://example.com
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#geography"></use>
+                  </svg>
+                  <a href="https://wonder.land">
+                    https://wonder.land
                   </a>
                 </dd>
+                
+
+                
                 <dt class="visually-hidden">Contact :</dt>
                 <dd>
-                    <svg class="icon" aria-hidden="true">
-                      <use xlink:href="#pencil"></use>
-                    </svg>
-                    hello@example.com
-
-
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#pencil"></use>
+                  </svg>
+                  hello@wonder.land
                 </dd>
+                
+
               </dl>
             </article>
           </li>
-
-          <li class="show" data-category="Plantes">
+        
+          <li class="show" data-topic="Teatime">
             <article>
-              <h3>Exemple "Plantes"</h3>
-              <p>Vestibulum laoreet sit amet sapien id ultricies. Aenean lacus
-              elementum condimentum. Nunc vel hendrerit nibh. Sed in tortor eget
-              ligula luctus rhoncus. </p>
+              <h3>The Dormouse</h3>
+              <p>Why, sometimes I've believed as many as six impossible things before breakfast.</p>
 
               <ul class="tags">
-
-                  <li>
-                    hendrerit
+                
+                  <li class="bg-fcf5e3">
+                    tea
                   </li>
-
-                  <li>
-                    ultricies
+                
+                  <li class="bg-fcf5e3">
+                    biscuit
                   </li>
-
-                  <li>
-                    Vestibulum laoreet
+                
+                  <li class="bg-fcf5e3">
+                    party
                   </li>
-
+                
               </ul>
 
               <dl class="infos">
+
+                
                 <dt class="visually-hidden">Périmètre d'action :</dt>
                 <dd>
                   <svg class="icon" aria-hidden="true">
                     <use xlink:href="#localisation"></use>
                   </svg>
-                  France entière
+                  Wonderland
                 </dd>
+                
+
+                
                 <dt class="visually-hidden">Lien :</dt>
                 <dd>
-
-                    <svg class="icon" aria-hidden="true">
-                      <use xlink:href="#geography"></use>
-                    </svg>
-
-                  <a href="https://example.com">
-                    https://example.com
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#geography"></use>
+                  </svg>
+                  <a href="https://wonder.land">
+                    https://wonder.land
                   </a>
                 </dd>
+                
+
+                
                 <dt class="visually-hidden">Contact :</dt>
                 <dd>
-                    <svg class="icon" aria-hidden="true">
-                      <use xlink:href="#pencil"></use>
-                    </svg>
-                    hello@example.com
-
-
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#pencil"></use>
+                  </svg>
+                  hello@wonder.land
                 </dd>
+                
+
               </dl>
             </article>
           </li>
-
-          <li class="show" data-category="Plantes">
+        
+          <li class="show" data-topic="Teatime">
             <article>
-              <h3>Exemple "Plantes"</h3>
-              <p>Vestibulum laoreet sit amet sapien id ultricies. Aenean lacus
-              elementum condimentum. Nunc vel hendrerit nibh. Sed in tortor eget
-              ligula luctus rhoncus. </p>
+              <h3>March Hare</h3>
+              <p>Why is a raven like a writing-desk?</p>
 
               <ul class="tags">
-
-                  <li>
-                    hendrerit
+                
+                  <li class="bg-fcf5e3">
+                    tea
                   </li>
-
-                  <li>
-                    ultricies
+                
+                  <li class="bg-fcf5e3">
+                    biscuit
                   </li>
-
-                  <li>
-                    Vestibulum laoreet
+                
+                  <li class="bg-fcf5e3">
+                    party
                   </li>
-
+                
               </ul>
 
               <dl class="infos">
+
+                
                 <dt class="visually-hidden">Périmètre d'action :</dt>
                 <dd>
                   <svg class="icon" aria-hidden="true">
                     <use xlink:href="#localisation"></use>
                   </svg>
-                  France entière
+                  Wonderland
                 </dd>
+                
+
+                
                 <dt class="visually-hidden">Lien :</dt>
                 <dd>
-
-                    <svg class="icon" aria-hidden="true">
-                      <use xlink:href="#geography"></use>
-                    </svg>
-
-                  <a href="https://example.com">
-                    https://example.com
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#geography"></use>
+                  </svg>
+                  <a href="https://wonder.land">
+                    https://wonder.land
                   </a>
                 </dd>
+                
+
+                
                 <dt class="visually-hidden">Contact :</dt>
                 <dd>
-                    <svg class="icon" aria-hidden="true">
-                      <use xlink:href="#pencil"></use>
-                    </svg>
-                    hello@example.com
-
-
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#pencil"></use>
+                  </svg>
+                  hello@wonder.land
                 </dd>
+                
+
               </dl>
             </article>
           </li>
-
-          <li class="show" data-category="Champignons">
+        
+          <li class="show" data-topic="Cards">
             <article>
-              <h3>Exemple "Champignons"</h3>
-              <p>Vestibulum laoreet sit amet sapien id ultricies. Aenean lacus
-              elementum condimentum. Nunc vel hendrerit nibh. Sed in tortor eget
-              ligula luctus rhoncus. </p>
+              <h3>Queen of Hearts</h3>
+              <p>Off with their heads!</p>
 
               <ul class="tags">
-
-                  <li>
-                    hendrerit
+                
+                  <li class="bg-f4e4e1">
+                    cards
                   </li>
-
-                  <li>
-                    ultricies
+                
+                  <li class="bg-f4e4e1">
+                    royalty
                   </li>
-
-                  <li>
-                    Vestibulum laoreet
+                
+                  <li class="bg-f4e4e1">
+                    time
                   </li>
-
+                
               </ul>
 
               <dl class="infos">
+
+                
                 <dt class="visually-hidden">Périmètre d'action :</dt>
                 <dd>
                   <svg class="icon" aria-hidden="true">
                     <use xlink:href="#localisation"></use>
                   </svg>
-                  France entière
+                  Wonderland
                 </dd>
+                
+
+                
                 <dt class="visually-hidden">Lien :</dt>
                 <dd>
-
-                    <svg class="icon" aria-hidden="true">
-                      <use xlink:href="#geography"></use>
-                    </svg>
-
-                  <a href="https://example.com">
-                    https://example.com
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#geography"></use>
+                  </svg>
+                  <a href="https://wonder.land">
+                    https://wonder.land
                   </a>
                 </dd>
+                
+
+                
                 <dt class="visually-hidden">Contact :</dt>
                 <dd>
-                    <svg class="icon" aria-hidden="true">
-                      <use xlink:href="#pencil"></use>
-                    </svg>
-                    hello@example.com
-
-
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#pencil"></use>
+                  </svg>
+                  hello@wonder.land
                 </dd>
+                
+
               </dl>
             </article>
           </li>
-
-          <li class="show" data-category="Plantes">
+        
+          <li class="show" data-topic="Cards">
             <article>
-              <h3>Exemple "Plantes"</h3>
-              <p>Vestibulum laoreet sit amet sapien id ultricies. Aenean lacus
-              elementum condimentum. Nunc vel hendrerit nibh. Sed in tortor eget
-              ligula luctus rhoncus. </p>
+              <h3>The White Rabbit</h3>
+              <p>Curiouser and curiouser!</p>
 
               <ul class="tags">
-
-                  <li>
-                    hendrerit
+                
+                  <li class="bg-f4e4e1">
+                    cards
                   </li>
-
-                  <li>
-                    ultricies
+                
+                  <li class="bg-f4e4e1">
+                    royalty
                   </li>
-
-                  <li>
-                    Vestibulum laoreet
+                
+                  <li class="bg-f4e4e1">
+                    time
                   </li>
-
+                
               </ul>
 
               <dl class="infos">
+
+                
                 <dt class="visually-hidden">Périmètre d'action :</dt>
                 <dd>
                   <svg class="icon" aria-hidden="true">
                     <use xlink:href="#localisation"></use>
                   </svg>
-                  France entière
+                  Wonderland
                 </dd>
+                
+
+                
                 <dt class="visually-hidden">Lien :</dt>
                 <dd>
-
-                    <svg class="icon" aria-hidden="true">
-                      <use xlink:href="#geography"></use>
-                    </svg>
-
-                  <a href="https://example.com">
-                    https://example.com
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#geography"></use>
+                  </svg>
+                  <a href="https://wonder.land">
+                    https://wonder.land
                   </a>
                 </dd>
+                
+
+                
                 <dt class="visually-hidden">Contact :</dt>
                 <dd>
-                    <svg class="icon" aria-hidden="true">
-                      <use xlink:href="#pencil"></use>
-                    </svg>
-                    hello@example.com
-
-
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#pencil"></use>
+                  </svg>
+                  hello@wonder.land
                 </dd>
+                
+
               </dl>
             </article>
           </li>
+        
 
       </ul>
 
       <footer>
         <ul>
           <li>
-            <a href="/">
+            <a href="a-propos.html">
               À propos
-            </a>
-          </li>
-          <li>
-            <a href="/">
-              Contribuer
             </a>
           </li>
         </ul>
       </footer>
     </div>
+
 
     <svg aria-hidden="true">
       <symbol id="localisation" viewBox="0 0 16 16">
@@ -480,14 +514,15 @@
         .168-.11l.178-.178z"/>
       </symbol>
     </svg>
+
     <script>
-      const select = document.getElementById('category-filter')
+      const select = document.getElementById('topic-filter')
       select.addEventListener('change', function(e) {
-        const category = select.options[select.selectedIndex].value
+        const topic = select.options[select.selectedIndex].value
         const allElements = document
           .querySelectorAll('.main-list li')
 
-        if (category == 'Tous') {
+        if (topic == 'Tous') {
           allElements.forEach(function(element) {
             element.classList.add('show')
           })
@@ -500,7 +535,7 @@
         })
 
         const elementsToShow = document
-          .querySelectorAll('[data-category="' + category + '"]');
+          .querySelectorAll('[data-topic="' + topic + '"]');
 
         elementsToShow.forEach(function(element) {
           element.classList.add('show')
@@ -510,4 +545,3 @@
     </script>
   </body>
 </html>
-
