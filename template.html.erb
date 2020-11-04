@@ -37,18 +37,9 @@
       <form class="search">
         <select id="topic-filter">
           <option value="Tous">Filtrer par thématique&hellip;</option>
-          <option value="Soignant.e.s / personnel hospitalier">Soignant.e.s / Personnel hospitalier</option>
-          <option value="Travailleur.euse.s du sexe">Travailleur.euse.s du sexe</option>
-          <option value="Sans-papiers / migrant.e.s / mineur.e.s isolé.e.s / sans-domicile fixe / travailleur.ses précaires">Sans-papiers / migrant.e.s / mineur.e.s isolé.e.s / sans-domicile fixe / travailleur.ses précaires</option>
-          <option value="Personnes LGBTQIA+">Personnes LGBTQIA+</option>
-          <option value="Personnes en situation de handicap ou malades ou neuroA">Personnes en situation de handicap ou malades ou neuroA</option>
-          <option value="Petits commerces / créateurices">Petits commerces / créateurices</option>
-          <option value="Libraires">Libraires</option>
-          <option value="Personnes victimes de violences intra-familiales et conjugales">Personnes victimes de violences intra-familiales et conjugales</option>
-          <option value="Restaurants/bar">Restaurants/bar</option>
-          <option value="Photographes à soutenir">Photographes à soutenir</option>
-          <option value="Secteur musical">Secteur musical</option>
-          <option value="Illustration et goodies">Illustration et goodies</option>
+          <% @topics.each do |i, item| %>
+            <option value="<%= i %>"><%= item['label'] %></option>
+          <% end %>
         </select>
       </form>
 
