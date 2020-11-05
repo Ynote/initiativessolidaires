@@ -92,7 +92,6 @@ GOOGLE_SPREADSHEET_ID=***
 - *GOOGLE_SPREADSHEET_ID* : l'id du document collaboratif Google Sheet
 
 ## Prochaines étapes
-- Générer le fichier JSON automatiquement à partir du Google Sheet
 - Automatiser la génération du fichier JSON à une fois par jour
 - Ajouter un filtre géographique
 - Ajouter une barre de recherche (simple parsing du contenu du fichier JSON)
