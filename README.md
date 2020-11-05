@@ -16,13 +16,14 @@ sur Instagram.
   - [Pages du site](#pages-du-site)
   - [Intégration](#intégration)
   - [Génération de la page d'inventaire](#génération-de-la-page-dinventaire)
+  - [Configuration avec Dotenv](configuration-avec-dotenv)
 - [Contribuer](#contribuer)
 - [Remerciements](#remerciements)
 - [Ressources](#ressources)
 
 ## Prérequis
 - Ruby 2.6.3
-- la clé d'API d'un projet sur Google API
+- un compte Google et une clé d'API de projet sur Google API
 
 ## Motivation
 
@@ -77,8 +78,9 @@ ruby tasks/build
 ### Configuration avec Dotenv
 
 Pour pouvoir générer les fichiers JSON, il est nécessaire de renseigner la clé
-d'API du projet Google API. Vous pouvez créer un projet et y associer votre
-propre clé d'API ou utiliser la mienne (me la demander dans ce cas).
+d'API d'un projet Google API. Vous pouvez créer un projet dans
+https://console.developers.google.com et y associer une clé d'API spécifique pour
+ce projet.
 
 Vous pouvez renseigner les variables suivantes dans votre fichier `.env`:
 ```
