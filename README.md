@@ -12,11 +12,11 @@ sur Instagram.
 
 - [Prérequis](#prérequis)
   - [Développement](#développement)
-  - [Inventaire en JSON](#inventaire-en-json)
   - [Pages du site](#pages-du-site)
   - [Intégration](#intégration)
   - [Génération de la page d'inventaire](#génération-de-la-page-dinventaire)
-  - [Configuration avec Dotenv](configuration-avec-dotenv)
+  - [Données en JSON](#données-en-json)
+  - [Configuration avec Dotenv](#configuration-avec-dotenv)
 - [Contribuer](#contribuer)
 - [Remerciements](#remerciements)
 - [Ressources](#ressources)
@@ -39,24 +39,11 @@ accessibles par toutes et tous.
 
 Le site déployé est statique, à l'exception d'un petit script pour faire
 fonctionner le filtre de sélection. La page principale est générée dans un
-dossier `dist` à partir d'un fichier JSON.
-
-### Inventaire en JSON
-Ce fichier JSON est créé à partir du [Google Sheet
-d'origine](https://docs.google.com/spreadsheets/d/1ITLeygBBuz2oq-FwjBda7V-amHGK191-pXLLo1R7px0/edit?usp=sharing)
-sur lequel il y a une gestion de droits et d'historique. Il sert donc de base de
-données pour ce site et n'est donc pas versionné.
-
-Pour comprendre la structure de données, vous pouvez vous référer au fichier
-`src/inventory_example.json`.
-
-Les thématiques de l'inventaire sont listées dans un fichier JSONà part  pour
-permettre leur personnalisation. Vous pouvez vous référer au fichier
-`src/topics.json` pour en comprendre la structure de données.
+dossier `dist`.
 
 ### Pages du site
-Le script de génération est en Ruby. Il est très basique à escient et ne gère
-que la page principale.
+Le script de génération de la page principale est en Ruby. Il est très basique
+à escient et ne gère que cette page-là.
 
 Si vous ajoutez d'autres pages au site, mettez-les dans
 le dossier `dist`. Attention à bien reprendre la structure HTML de la page
@@ -68,25 +55,41 @@ site. Vous pouvez coder à partir du fichier `dist/example.html`. Lorsque
 l'intégration est prête, reportez vos modification sur le fichier
 `src/template.html`.
 
+### Données en JSON
+Les données de l'inventaire sont générées en JSON à partir du [Google Sheet
+d'origine](https://docs.google.com/spreadsheets/d/1ITLeygBBuz2oq-FwjBda7V-amHGK191-pXLLo1R7px0/edit?usp=sharing)
+sur lequel il y a une gestion de droits et d'historique. Il sert donc de base de
+données pour ce site et n'est donc pas versionné.
+
+Pour comprendre la structure de données, vous pouvez vous référer au fichier
+`src/inventory_example.json`.
+
+Les thématiques de l'inventaire sont listées dans un fichier JSON à part  pour
+permettre leur personnalisation. Vous pouvez vous référer au fichier
+`src/topics_example.json` pour en comprendre la structure de données.
+
 ### Génération de la page d'inventaire
 
-Pour générer la page :
+Lancer :
 ```
-ruby tasks/build
+make
 ```
 
 ### Configuration avec Dotenv
 
 Pour pouvoir générer les fichiers JSON, il est nécessaire de renseigner la clé
-d'API d'un projet Google API. Vous pouvez créer un projet dans
+d'API d'un projet Google API. Vous pouvez [créer un
+projet](https://cloud.google.com/docs/authentication/api-keys) dans
 https://console.developers.google.com et y associer une clé d'API spécifique pour
 ce projet.
 
-Vous pouvez renseigner les variables suivantes dans votre fichier `.env`:
+Vous devez renseigner les variables suivantes dans votre fichier `.env`:
 ```
 GOOGLE_SHEETS_API_KEY=***
 GOOGLE_SPREADSHEET_ID=***
 ```
+- *GOOGLE_SHEETS_API_KEY* : votre [clé d'API de projet Google](https://cloud.google.com/docs/authentication/api-keys)
+- *GOOGLE_SPREADSHEET_ID* : l'id du document collaboratif Google Sheet
 
 ## Prochaines étapes
 - Générer le fichier JSON automatiquement à partir du Google Sheet
