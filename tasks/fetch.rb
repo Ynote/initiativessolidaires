@@ -81,7 +81,7 @@ class GoogleSheetsFetcher
   end
 
   def topics_file
-    File.join(File.dirname(__FILE__), './../src/topics.json')
+    File.join(File.dirname(__FILE__), "./../#{ENV['TOPICS_FILENAME']}")
   end
 
   def inventory_range
@@ -89,7 +89,7 @@ class GoogleSheetsFetcher
   end
 
   def inventory_file
-    File.join(File.dirname(__FILE__), './../src/inventory.json')
+    File.join(File.dirname(__FILE__), "./../#{ENV['INVENTORY_FILENAME']}")
   end
 end
 
