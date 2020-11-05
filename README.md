@@ -10,6 +10,16 @@ Pour en savoir plus sur l'origine de cet inventaire, vous pouvez consulter [le
 post sur le profil de @chloe.madesta](https://www.instagram.com/p/CHDOcDygLV-/)
 sur Instagram.
 
+- [Prérequis](#prérequis)
+  - [Développement](#développement)
+  - [Inventaire en JSON](#inventaire-en-json)
+  - [Pages du site](#pages-du-site)
+  - [Intégration](#intégration)
+  - [Génération de la page d'inventaire](#génération-de-la-page-dinventaire)
+- [Contribuer](#contribuer)
+- [Remerciements](#remerciements)
+- [Ressources](#ressources)
+
 ## Prérequis
 - Ruby 2.6.3
 
@@ -80,8 +90,13 @@ Covenant](https://www.contributor-covenant.org/fr/version/1/4/code-of-conduct/).
 
 ## Remerciements
 
-Je remercie [@sunny](https://github.com/sunny/) pour ses revues de code, son
-aide et son soutien pour la création de ce site.
+Je remercie [@chloe.madesta](https://www.instagram.com/chloe.madesta/) et
+[@queergouine](https://www.instagram.com/queergouine/) pour tout le travail de
+contenu et de hiérarchisation, et pour leur énergie qui m'a inspirée pour
+coder ce mini-site.
+
+Je remercie également [@sunny](https://github.com/sunny/) pour ses revues de
+code, son aide et son soutien pour la création de ce site.
 
 ## Ressources
 
