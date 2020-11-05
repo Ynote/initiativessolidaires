@@ -70,7 +70,7 @@ l'intégration est prête, reportez vos modification sur le fichier
 
 Pour générer la page :
 ```
-ruby tasks/generate
+ruby tasks/build
 ```
 
 ## Prochaines étapes
