@@ -36,7 +36,11 @@ sur lequel il y a une gestion de droits et d'historique. Il sert donc de base de
 données pour ce site et n'est donc pas versionné.
 
 Pour comprendre la structure de données, vous pouvez vous référer au fichier
-`inventory_example.json`.
+`src/inventory_example.json`.
+
+Les thématiques de l'inventaire sont listées dans un fichier JSONà part  pour
+permettre leur personnalisation. Vous pouvez vous référer au fichier
+`src/topics.json` pour en comprendre la structure de données.
 
 ### Pages du site
 Le script de génération est en Ruby. Il est très basique à escient et ne gère
@@ -46,13 +50,13 @@ Si vous ajoutez d'autres pages au site, mettez-les dans
 le dossier `dist`. Attention à bien reprendre la structure HTML de la page
 principale et à mettre à jour les metas, ainsi que la navigation.
 
-## Intégration
+### Intégration
 Pour le travail d'intégration, il n'est pas nécessaire de générer la page du
 site. Vous pouvez coder à partir du fichier `dist/example.html`. Lorsque
 l'intégration est prête, reportez vos modification sur le fichier
-`template.html`.
+`src/template.html`.
 
-## Génération de la page d'inventaire
+### Génération de la page d'inventaire
 
 Pour générer la page :
 ```
