@@ -6,3 +6,4 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 gem 'erb', '~> 2.2'
 gem 'json'
+gem 'dotenv', groups: [:development, :test]

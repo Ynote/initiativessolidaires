@@ -22,6 +22,7 @@ sur Instagram.
 
 ## Prérequis
 - Ruby 2.6.3
+- la clé d'API d'un projet sur Google API
 
 ## Motivation
 
@@ -71,6 +72,18 @@ l'intégration est prête, reportez vos modification sur le fichier
 Pour générer la page :
 ```
 ruby tasks/build
+```
+
+### Configuration avec Dotenv
+
+Pour pouvoir générer les fichiers JSON, il est nécessaire de renseigner la clé
+d'API du projet Google API. Vous pouvez créer un projet et y associer votre
+propre clé d'API ou utiliser la mienne (me la demander dans ce cas).
+
+Vous pouvez renseigner les variables suivantes dans votre fichier `.env`:
+```
+GOOGLE_SHEETS_API_KEY=***
+GOOGLE_SPREADSHEET_ID=***
 ```
 
 ## Prochaines étapes
