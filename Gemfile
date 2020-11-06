@@ -21,3 +21,6 @@ gem 'pastel', groups: [:development, :test]
 
 # Run tests
 gem 'rspec', groups: [:development, :test]
+
+# Pause code to test and debug
+gem 'pry', groups: [:development]
