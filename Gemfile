@@ -10,6 +10,9 @@ gem 'erb', '~> 2.2'
 # Parse and dump JSON
 gem 'json'
 
+# Request Google Sheets API
+gem  'google-api-client'
+
 # Manage environment variables
 gem 'dotenv', groups: [:development, :test]
 
