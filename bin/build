@@ -1,8 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'pastel'
-require_relative './../src/lib/fetch.rb'
-require_relative './../src/lib/build.rb'
+require_relative './../src/lib/inventory.rb'
 
 Inventory.build
 
