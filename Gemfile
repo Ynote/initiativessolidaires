@@ -17,7 +17,7 @@ gem  'google-api-client'
 gem 'pastel'
 
 # Manage environment variables
-gem 'dotenv', groups: [:development, :test]
+gem 'dotenv'
 
 # Run tests
 gem 'rspec', groups: [:development, :test]
