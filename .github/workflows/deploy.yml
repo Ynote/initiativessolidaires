@@ -6,7 +6,6 @@ on:
 
 jobs:
   build_and_deploy:
-    needs: test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -21,7 +20,13 @@ jobs:
         run: bundle install --deployment
 
       - name: Build
-        run: ruby bin/build.rb
+        run: ruby bin/build
+
+      # Test
+      - name: Install dependencies
+        run: bundle install
+      - name: Run tests
+        run: bundle exec rspec
 
       # Deploy
       - name: Copying files
