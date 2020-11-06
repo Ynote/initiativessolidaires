@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+rm src/data/inventory.json
+rm src/data/topics.json
+rm dist/index.html

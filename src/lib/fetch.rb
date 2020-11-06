@@ -93,5 +93,3 @@ class GoogleSheetsFetcher
     File.join(File.dirname(__FILE__), "./../#{INVENTORY_FILENAME}")
   end
 end
-
-GoogleSheetsFetcher.new.run

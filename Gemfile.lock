@@ -4,6 +4,9 @@ GEM
     dotenv (2.7.6)
     erb (2.2.0)
     json (2.3.1)
+    pastel (0.8.0)
+      tty-color (~> 0.5)
+    tty-color (0.5.2)
 
 PLATFORMS
   ruby
@@ -12,6 +15,7 @@ DEPENDENCIES
   dotenv
   erb (~> 2.2)
   json
+  pastel
 
 BUNDLED WITH
    1.17.2
