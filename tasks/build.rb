@@ -27,10 +27,7 @@ class Inventory
 end
 
 def build
-  template_file = File.join(
-    File.dirname(__FILE__),
-    './../src/template.html.erb'
-  )
+  template_file = File.join(__dir__, './../src/template.html.erb')
   template = File.read(template_file)
 
   File.open('dist/index.html', 'w') do |f|

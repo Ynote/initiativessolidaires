@@ -33,6 +33,7 @@ class GoogleSheetsFetcher
     )
 
     # TODO : handle error if response is empty
+    raise "Empty response" if response.values.empty?
 
     response.values.each_with_index do |row, i|
       next if i < TOPICS_SHEET_START_ROW
@@ -63,7 +64,7 @@ class GoogleSheetsFetcher
         next
       end
 
-      @inventory.push({
+      inventory.push({
         organization: row[0],
         mission: row[1],
         localization: row[2],
@@ -73,7 +74,7 @@ class GoogleSheetsFetcher
       })
     end
 
-    File.write(inventory_file, JSON.dump(@inventory))
+    File.write(inventory_file, JSON.dump(inventory))
   end
 
   def topics_range
