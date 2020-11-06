@@ -10,7 +10,7 @@ RSpec.describe Inventory do
   let(:list) do
     ['Mad Hatter', 'Cheshire Cat', 'Queen of Hearts'].to_json
   end
-  let(:array) { instance_double(Array) }
+  let(:inventory_list) { ['Mad', 'Hatter'] }
 
   describe '.build' do
     before do
@@ -70,12 +70,12 @@ RSpec.describe Inventory do
     end
 
     it 'shuffles the content of the list' do
-      allow(JSON).to receive(:parse).and_return(array)
-      allow(array).to receive(:shuffle)
+      allow(JSON).to receive(:parse).and_return(inventory_list)
+      allow(inventory_list).to receive(:shuffle)
 
       subject.inventory
 
-      expect(array).to have_received(:shuffle)
+      expect(inventory_list).to have_received(:shuffle)
     end
   end
 
