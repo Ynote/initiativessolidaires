@@ -13,11 +13,11 @@ gem 'json'
 # Request Google Sheets API
 gem  'google-api-client'
 
+# Style terminal strings
+gem 'pastel'
+
 # Manage environment variables
 gem 'dotenv', groups: [:development, :test]
-
-# Style terminal strings
-gem 'pastel', groups: [:development, :test]
 
 # Run tests
 gem 'rspec', groups: [:development, :test]
