@@ -1,16 +1,16 @@
 #!/usr/bin/env ruby
 
-require 'pastel'
+# require 'pastel'
 require_relative './../src/lib/inventory.rb'
 
 Inventory.build
 
-pastel = Pastel.new
+# pastel = Pastel.new
 
-puts pastel.green(
-"
-Build success! Generated files:
-  - src/data/inventory.json
-  - src/data/topics.json
-  - dist/index.html
-")
+# puts pastel.green(
+# "
+# Build success! Generated files:
+  # - src/data/inventory.json
+  # - src/data/topics.json
+  # - dist/index.html
+# ")

@@ -20,7 +20,7 @@ jobs:
         run: bundle install --deployment
 
       - name: Build
-        run: ruby bin/build
+        run: bin/build
 
       # Test
       - name: Install dependencies
