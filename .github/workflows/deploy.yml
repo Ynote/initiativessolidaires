@@ -1,0 +1,36 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@ec106b438a1ff6ff109590de34ddc62c540232e0
+        with:
+          ruby-version: 2.6
+
+      # Build
+      - name: Install dependencies
+        run: bundle install --deployment
+
+      - name: Build
+        run: bin/build
+
+      # Deploy
+      - name: Copying files
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          password: ${{ secrets.DEPLOY_PASSWORD }}
+          rm: true
+          source: dist/
+          target: ${{ secrets.DEPLOY_PATH }}
+          strip_components: 1 # remove "www/" on target
