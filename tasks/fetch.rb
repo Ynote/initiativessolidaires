@@ -33,7 +33,6 @@ class GoogleSheetsFetcher
       topics_range
     )
 
-    # TODO : handle error if response is empty
     raise "Empty response" if response.values.empty?
 
     response.values.each_with_index do |row, i|
