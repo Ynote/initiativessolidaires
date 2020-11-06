@@ -131,54 +131,6 @@ svg {
   background-color: #e5e1ef;
 }
 
-.tags li.bg-e5e1ef {
-  background-color: #e5e1ef;
-}
-
-.tags li.bg-dee8ea {
-  background-color: #dee8ea;
-}
-
-.tags li.bg-e6f0f2 {
-  background-color: #e6f0f2;
-}
-
-.tags li.bg-fcf5e3 {
-  background-color: #fcf5e3;
-}
-
-.tags li.bg-f9eadb {
-  background-color: #f9eadb;
-}
-
-.tags li.bg-ede9e6 {
-  background-color: #ede9e6;
-}
-
-.tags li.bg-f4e4e1 {
-  background-color: #f4e4e1;
-}
-
-.tags li.bg-f2e3ea {
-  background-color: #f2e3ea;
-}
-
-.tags li.bg-e3efde {
-  background-color: #e3efde;
-}
-
-.tags li.bg-dcd5f2 {
-  background-color: #dcd5f2;
-}
-
-.tags li.bg-c0e5ed {
-  background-color: #c0e5ed;
-}
-
-.tags li.bg-cff2f9 {
-  background-color: #cff2f9;
-}
-
 .tags li:first-letter {
   text-transform: uppercase;
 }
