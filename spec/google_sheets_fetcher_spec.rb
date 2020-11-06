@@ -12,17 +12,17 @@ RSpec.describe GoogleSheetsFetcher do
       [
         "Teatime with the Mad Hatter",
         "#fcf5e3",
-        "tea, biscuit, party"
+        "  tea, biscuit, party"
       ],
       [
         "Madness in Wonderland",
         "#f9eadb",
-        "madness, happy"
+        "madness , happy"
       ],
       [
         "Playing with cards",
         "#f4e4e1",
-        "cards, royalty, time"
+        "cards  , royalty,   time   "
       ],
     ]
   end
