@@ -95,6 +95,8 @@ GOOGLE_SPREADSHEET_ID=***
 - Automatiser la génération du fichier JSON à une fois par jour
 - Ajouter un filtre géographique
 - Ajouter une barre de recherche (simple parsing du contenu du fichier JSON)
+- Ajouter un formulaire pour soumettre une proposition qui s'ajouter
+  automatiquement sur un des onglets du Google Sheets
 
 ## Contribuer
 
