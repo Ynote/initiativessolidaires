@@ -2,63 +2,110 @@ require 'spec_helper'
 
 RSpec.describe Inventory do
   subject { described_class.new }
-  let(:inventory) do
-    instance_double(Inventory, get_binding: 'binding')
-  end
   let(:google_fetcher) { instance_double(GoogleSheetsFetcher, run: nil) }
-  let(:erb) { instance_double(ERB, result: 'Alice in Wonderland' )}
-  let(:list) do
-    ['Mad Hatter', 'Cheshire Cat', 'Queen of Hearts'].to_json
+  let(:topics) do
+    {
+      "Teatime" => {
+        "label" => "Teatime with the Mad Hatter",
+        "color" => "#fcf5e3",
+        "keywords" => ["tea", "biscuit", "party"]
+      },
+      "Madness" => {
+        "label" => "Madness in Wonderland",
+        "color" => "#f9eadb",
+        "keywords" => ["madness", "happy"]
+      },
+      "Cards" => {
+        "label" => "Playing with cards",
+        "color" => "#f4e4e1",
+        "keywords" => ["cards", "royalty", "time"]
+      }
+    }
   end
-  let(:inventory_list) { ['Mad', 'Hatter'] }
+
+  let(:inventory) do
+    [
+      {
+        "organization" => "Mad Hatter",
+        "mission" => "Yes, that's it! Said the Hatter with a sigh, it's always tea time.",
+        "localization" => "Wonderland",
+        "website" => "https://wonder.land",
+        "contact" => "hello@wonder.land",
+        "keywords" => "Teatime"
+      },
+      {
+        "organization" => "Alice",
+        "mission" => "Have i gone mad? I'm afraid so, but let me tell you something, the best people usually are.",
+        "localization" => "Wonderland",
+        "website" => "https://wonder.land",
+        "contact" => "hello@wonder.land",
+        "keywords" => "Madness"
+      },
+    ]
+  end
 
   describe '.build' do
     before do
       allow(GoogleSheetsFetcher)
         .to receive(:new)
         .and_return(google_fetcher, google_fetcher)
-
-      allow(ERB)
-        .to receive(:new)
-        .with('Alice')
-        .and_return(erb)
-
-      allow(described_class)
-        .to receive(:new)
-        .and_return(inventory)
-
-      allow(File).to receive(:join)
-      allow(File).to receive(:read).and_return('Alice')
-      allow(File).to receive(:write)
-
-      Inventory.build
     end
 
-    it 'fetched Google Sheets data' do
-      expect(google_fetcher).to have_received(:run)
+    describe 'by default' do
+      before do
+        allow(File).to receive(:join)
+        allow(File).to receive(:read).and_return('Alice')
+
+        Inventory.build
+      end
+
+      it 'fetched Google Sheets data' do
+        expect(google_fetcher).to have_received(:run)
+      end
+
+      it 'uses the index template' do
+        expect(File)
+          .to have_received(:join)
+          .with(/src\/lib/, /templates\/index.html.erb/)
+
+        expect(File).to have_received(:read)
+      end
     end
 
-    it 'uses the index template' do
-      expect(File)
-        .to have_received(:join)
-        .with(/src\/lib/, /templates\/index.html.erb/)
-    end
+    describe 'ERB templating' do
+      before do
+        allow(File).to receive(:write)
+        allow_any_instance_of(described_class)
+          .to receive(:topics)
+          .and_return(topics)
+        allow_any_instance_of(described_class)
+          .to receive(:inventory)
+          .and_return(inventory)
 
-    it 'passes the class context to the template' do
-      expect(erb).to have_received(:result).with('binding')
-    end
+        Inventory.build
+      end
 
-    it 'creates an HTML file' do
-      expect(File)
-        .to have_received(:write)
-        .with('dist/index.html', 'Alice in Wonderland')
+      it 'creates an HTML file' do
+        expect(File)
+          .to have_received(:write)
+          .with('dist/index.html', /<html/)
+      end
+
+      it 'creates an HTML file with some options' do
+        expect(File)
+          .to have_received(:write)
+          .with(
+            'dist/index.html',
+            /<option value="Madness">Madness in Wonderland<\/option>/
+          )
+      end
     end
   end
 
   describe '#inventory' do
     before do
       allow(File).to receive(:join)
-      allow(File).to receive(:read).and_return(list)
+      allow(File).to receive(:read).and_return(inventory.to_json)
     end
 
     it 'uses the inventory JSON file' do
@@ -67,22 +114,24 @@ RSpec.describe Inventory do
       expect(File)
         .to have_received(:join)
         .with(/src\/lib/, /inventory.json/)
+
+      expect(File).to have_received(:read)
     end
 
     it 'shuffles the content of the list' do
-      allow(JSON).to receive(:parse).and_return(inventory_list)
-      allow(inventory_list).to receive(:shuffle)
+      allow(JSON).to receive(:parse).and_return(inventory)
+      allow(inventory).to receive(:shuffle)
 
       subject.inventory
 
-      expect(inventory_list).to have_received(:shuffle)
+      expect(inventory).to have_received(:shuffle)
     end
   end
 
   describe '#topics' do
     before do
       allow(File).to receive(:join)
-      allow(File).to receive(:read).and_return(list)
+      allow(File).to receive(:read).and_return(topics.to_json)
 
       subject.topics
     end
@@ -91,6 +140,7 @@ RSpec.describe Inventory do
       expect(File)
         .to have_received(:join)
         .with(/src\/lib/, /topics.json/)
+
       expect(File).to have_received(:read)
     end
   end
