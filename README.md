@@ -11,7 +11,7 @@ post sur le profil de @chloe.madesta](https://www.instagram.com/p/CHDOcDygLV-/)
 sur Instagram.
 
 - [Prérequis](#prérequis)
-  - [Développement](#développement)
+- [Développement](#développement)
   - [Pages du site](#pages-du-site)
   - [Intégration](#intégration)
   - [Génération de la page d'inventaire](#génération-de-la-page-dinventaire)
