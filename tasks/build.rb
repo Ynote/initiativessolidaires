@@ -1,6 +1,7 @@
 require 'erb'
 require 'json'
 require 'dotenv/load'
+require_relative './constants.rb'
 require_relative './string_monkey_patch.rb'
 
 class Inventory
@@ -10,11 +11,11 @@ class Inventory
   def initialize
     inventory_file = File.join(
       File.dirname(__FILE__),
-      "./../#{ENV['INVENTORY_FILENAME']}"
+      "./../#{INVENTORY_FILENAME}"
     )
     topics_file = File.join(
       File.dirname(__FILE__),
-      "./../#{ENV['TOPICS_FILENAME']}"
+      "./../#{TOPICS_FILENAME}"
     )
 
     @inventory = JSON.parse(File.read(inventory_file)).shuffle

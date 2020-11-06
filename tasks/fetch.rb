@@ -1,6 +1,7 @@
 require 'google/apis/sheets_v4'
 require 'json'
 require 'dotenv/load'
+require_relative './constants.rb'
 
 class GoogleSheetsFetcher
   TOPICS_SHEET_NAME = 'Thématiques'.freeze
@@ -82,7 +83,7 @@ class GoogleSheetsFetcher
   end
 
   def topics_file
-    File.join(File.dirname(__FILE__), "./../#{ENV['TOPICS_FILENAME']}")
+    File.join(File.dirname(__FILE__), "./../#{TOPICS_FILENAME}")
   end
 
   def inventory_range
@@ -90,7 +91,7 @@ class GoogleSheetsFetcher
   end
 
   def inventory_file
-    File.join(File.dirname(__FILE__), "./../#{ENV['INVENTORY_FILENAME']}")
+    File.join(File.dirname(__FILE__), "./../#{INVENTORY_FILENAME}")
   end
 end
 
