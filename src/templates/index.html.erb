@@ -37,7 +37,7 @@
       <form class="search">
         <select id="topic-filter">
           <option value="Tous">Filtrer par thématique&hellip;</option>
-          <% @topics.each do |i, item| %>
+          <% topics.each do |i, item| %>
             <option value="<%= i %>"><%= item['label'] %></option>
           <% end %>
         </select>
@@ -45,15 +45,15 @@
 
       <ul class="main-list">
 
-        <% @inventory.each do |item| %>
+        <% inventory.each do |item| %>
           <li class="show" data-topic="<%= item['keywords'] %>">
             <article>
               <h3><%= item['organization'] %></h3>
               <p><%= item['mission'] %></p>
 
               <ul class="tags">
-                <% @topics[item['keywords']]['keywords'].each do |keyword| %>
-                  <li style="background-color: <%= @topics[item['keywords']]['color']%>">
+                <% topics[item['keywords']]['keywords'].each do |keyword| %>
+                  <li style="background-color: <%= topics[item['keywords']]['color']%>">
                     <%= keyword %>
                   </li>
                 <% end %>

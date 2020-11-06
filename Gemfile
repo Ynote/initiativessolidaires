@@ -10,8 +10,17 @@ gem 'erb', '~> 2.2'
 # Parse and dump JSON
 gem 'json'
 
+# Request Google Sheets API
+gem  'google-api-client'
+
 # Manage environment variables
 gem 'dotenv', groups: [:development, :test]
 
 # Style terminal strings
 gem 'pastel', groups: [:development, :test]
+
+# Run tests
+gem 'rspec', groups: [:development, :test]
+
+# Pause code to test and debug
+gem 'pry', groups: [:development]
