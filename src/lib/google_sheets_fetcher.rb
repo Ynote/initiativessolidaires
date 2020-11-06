@@ -79,7 +79,7 @@ class GoogleSheetsFetcher
   def service
     @service ||= begin
       service = Google::Apis::SheetsV4::SheetsService.new
-      service.key = ENV['GOOGLE_SHEETS_API_KEY']
+      service.key = api_key
       service
     end
   end
@@ -102,5 +102,9 @@ class GoogleSheetsFetcher
 
   def spreadsheet_id
     ENV['GOOGLE_SPREADSHEET_ID']
+  end
+
+  def api_key
+    ENV['GOOGLE_SHEETS_API_KEY']
   end
 end
