@@ -5,7 +5,7 @@ RSpec.describe GoogleSheetsFetcher do
   let(:service) do
     instance_double(Google::Apis::SheetsV4::SheetsService)
   end
-  let(:topics_response) { double(:topics_response) }
+  let(:topics_response) { double(:topics_response, values: topics_values) }
   let(:topics_values) do
     [
       [], [], [], [],
@@ -27,7 +27,9 @@ RSpec.describe GoogleSheetsFetcher do
     ]
   end
 
-  let(:inventory_response) { double(:inventory_response) }
+  let(:inventory_response) do
+    double(:inventory_response, values: inventory_values)
+  end
   let(:inventory_values) do
     [
       [], [], [], [],
@@ -102,14 +104,6 @@ RSpec.describe GoogleSheetsFetcher do
       allow_any_instance_of(Google::Apis::SheetsV4::SheetsService)
         .to receive(:get_spreadsheet_values)
         .and_return(topics_response, inventory_response)
-
-      allow(topics_response)
-        .to receive(:values)
-        .and_return(topics_values)
-
-      allow(inventory_response)
-        .to receive(:values)
-        .and_return(inventory_values)
 
       allow(File).to receive(:write)
 
