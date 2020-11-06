@@ -1,6 +1,4 @@
-require 'rspec'
-require 'pry'
-require_relative './../src/lib/inventory.rb'
+require 'spec_helper'
 
 RSpec.describe Inventory do
   subject { described_class.new }

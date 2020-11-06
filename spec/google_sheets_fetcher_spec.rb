@@ -1,5 +1,4 @@
-require 'pry'
-require_relative './../src/lib/google_sheets_fetcher'
+require 'spec_helper'
 
 RSpec.describe GoogleSheetsFetcher do
   let(:fetcher) { described_class.new }
