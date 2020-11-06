@@ -4,7 +4,7 @@ require_relative './../src/lib/google_sheets_fetcher'
 RSpec.describe GoogleSheetsFetcher do
   let(:fetcher) { described_class.new }
   let(:service) do
-    instance_double('Google::Apis::SheetsV4::SheetsService')
+    instance_double(Google::Apis::SheetsV4::SheetsService)
   end
   let(:topics_response) { double(:topics_response) }
   let(:topics_values) do
@@ -112,8 +112,7 @@ RSpec.describe GoogleSheetsFetcher do
         .to receive(:values)
         .and_return(inventory_values)
 
-      allow(File)
-        .to receive(:write)
+      allow(File).to receive(:write)
 
       fetcher.run
     end
