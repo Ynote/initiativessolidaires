@@ -77,10 +77,11 @@ class GoogleSheetsFetcher
   end
 
   def service
-    @service ||= Google::Apis::SheetsV4::SheetsService.new
-    @service.key = ENV['GOOGLE_SHEETS_API_KEY']
-
-    @service
+    @service ||= begin
+      service = Google::Apis::SheetsV4::SheetsService.new
+      service.key = ENV['GOOGLE_SHEETS_API_KEY']
+      service
+    end
   end
 
   def topics_range

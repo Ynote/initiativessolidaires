@@ -55,10 +55,6 @@ RSpec.describe Inventory do
         .to have_received(:write)
         .with('dist/index.html', 'Alice in Wonderland')
     end
-
-    describe do
-
-    end
   end
 
   describe '#inventory' do
@@ -75,17 +71,13 @@ RSpec.describe Inventory do
         .with(/src\/lib/, /inventory.json/)
     end
 
-    describe do
-      before do
-        allow(JSON).to receive(:parse).and_return(array)
-        allow(array).to receive(:shuffle)
-      end
+    it 'shuffles the content of the list' do
+      allow(JSON).to receive(:parse).and_return(array)
+      allow(array).to receive(:shuffle)
 
-      it 'shuffles the content of the list' do
-        subject.inventory
+      subject.inventory
 
-        expect(array).to have_received(:shuffle)
-      end
+      expect(array).to have_received(:shuffle)
     end
   end
 
@@ -101,7 +93,7 @@ RSpec.describe Inventory do
       expect(File)
         .to have_received(:join)
         .with(/src\/lib/, /topics.json/)
+      expect(File).to have_received(:read)
     end
-
   end
 end
