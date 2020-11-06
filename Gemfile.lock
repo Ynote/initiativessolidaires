@@ -1,11 +1,25 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    diff-lcs (1.4.4)
     dotenv (2.7.6)
     erb (2.2.0)
     json (2.3.1)
     pastel (0.8.0)
       tty-color (~> 0.5)
+    rspec (3.10.0)
+      rspec-core (~> 3.10.0)
+      rspec-expectations (~> 3.10.0)
+      rspec-mocks (~> 3.10.0)
+    rspec-core (3.10.0)
+      rspec-support (~> 3.10.0)
+    rspec-expectations (3.10.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.10.0)
+    rspec-mocks (3.10.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.10.0)
+    rspec-support (3.10.0)
     tty-color (0.5.2)
 
 PLATFORMS
@@ -16,6 +30,7 @@ DEPENDENCIES
   erb (~> 2.2)
   json
   pastel
+  rspec
 
 BUNDLED WITH
    1.17.2

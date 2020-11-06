@@ -15,3 +15,6 @@ gem 'dotenv', groups: [:development, :test]
 
 # Style terminal strings
 gem 'pastel', groups: [:development, :test]
+
+# Run tests
+gem 'rspec', groups: [:development, :test]
