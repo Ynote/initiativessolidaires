@@ -4,8 +4,9 @@ require 'pastel'
 require_relative './../src/lib/fetch.rb'
 require_relative './../src/lib/build.rb'
 
-pastel = Pastel.new
 Inventory.build
+
+pastel = Pastel.new
 
 puts pastel.green(
 "
