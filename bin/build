@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+require 'pastel'
+require_relative './../src/lib/fetch.rb'
+require_relative './../src/lib/build.rb'
+
+Inventory.build
+
+pastel = Pastel.new
+
+puts pastel.green(
+"
+Build success! Generated files:
+  - src/data/inventory.json
+  - src/data/topics.json
+  - dist/index.html
+")

@@ -53,7 +53,7 @@ principale et à mettre à jour les metas, ainsi que la navigation.
 Pour le travail d'intégration, il n'est pas nécessaire de générer la page du
 site. Vous pouvez coder à partir du fichier `dist/example.html`. Lorsque
 l'intégration est prête, reportez vos modification sur le fichier
-`src/template.html`.
+`src/templates/index.html`.
 
 ### Données en JSON
 Les données de l'inventaire sont générées en JSON à partir du [Google Sheet
@@ -62,17 +62,17 @@ sur lequel il y a une gestion de droits et d'historique. Il sert donc de base de
 données pour ce site et n'est donc pas versionné.
 
 Pour comprendre la structure de données, vous pouvez vous référer au fichier
-`src/inventory_example.json`.
+`src/data/inventory_example.json`.
 
 Les thématiques de l'inventaire sont listées dans un fichier JSON à part  pour
 permettre leur personnalisation. Vous pouvez vous référer au fichier
-`src/topics_example.json` pour en comprendre la structure de données.
+`src/data/topics_example.json` pour en comprendre la structure de données.
 
 ### Génération de la page d'inventaire
 
 Lancer :
 ```
-make
+bin/build
 ```
 
 ### Configuration avec Dotenv
@@ -88,8 +88,8 @@ Vous devez renseigner les variables suivantes dans votre fichier `.env`:
 GOOGLE_SHEETS_API_KEY=***
 GOOGLE_SPREADSHEET_ID=***
 ```
-- *GOOGLE_SHEETS_API_KEY* : votre [clé d'API de projet Google](https://cloud.google.com/docs/authentication/api-keys)
-- *GOOGLE_SPREADSHEET_ID* : l'id du document collaboratif Google Sheet
+- **GOOGLE_SHEETS_API_KEY** : votre [clé d'API de projet Google](https://cloud.google.com/docs/authentication/api-keys)
+- **GOOGLE_SPREADSHEET_ID** : l'id du document collaboratif Google Sheet
 
 ## Prochaines étapes
 - Automatiser la génération du fichier JSON à une fois par jour

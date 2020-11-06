@@ -22,19 +22,19 @@ class Inventory
     @topics = JSON.parse(File.read(topics_file))
   end
 
+  def self.build
+    GoogleSheetsFetcher.new.run
+
+    template_file = File.join(__dir__, './../templates/index.html.erb')
+    template = File.read(template_file)
+
+    File.open('dist/index.html', 'w') do |f|
+      output = ERB.new(template).result(new.get_binding)
+      f.write output
+    end
+  end
+
   def get_binding
     binding
   end
 end
-
-def build
-  template_file = File.join(__dir__, './../templates/index.html.erb')
-  template = File.read(template_file)
-
-  File.open('dist/index.html', 'w') do |f|
-    output = ERB.new(template).result(Inventory.new.get_binding)
-    f.write output
-  end
-end
-
-build
