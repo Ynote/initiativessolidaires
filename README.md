@@ -1,3 +1,4 @@
+![Deploy](https://github.com/Ynote/initiativessolidaires/workflows/Deploy/badge.svg)
 # Inventaire collaboratif des cagnottes et initiatives solidaires
 
 Ce projet propose une page recensant les cagnottes et initiatives solidaires à
