@@ -88,6 +88,8 @@ svg {
   padding-right: 2em;
   flex-basis: 90%;
   font-size: 0.8em;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .main-list {
