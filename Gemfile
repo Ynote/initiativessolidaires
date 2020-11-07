@@ -11,7 +11,7 @@ gem 'erb', '~> 2.2'
 gem 'json'
 
 # Request Google Sheets API
-gem  'google-api-client'
+gem 'google-api-client'
 
 # Style terminal strings
 gem 'pastel'
