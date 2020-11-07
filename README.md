@@ -78,8 +78,8 @@ bundle install
 ### Génération de la page d'inventaire
 
 Lancer :
-```sh
-bin/build
+```
+bundle exec bin/build
 ```
 
 ### Configuration avec Dotenv
@@ -98,6 +98,13 @@ GOOGLE_SPREADSHEET_ID=***
 ```
 - **GOOGLE_SHEETS_API_KEY** : votre [clé d'API de projet Google](https://cloud.google.com/docs/authentication/api-keys)
 - **GOOGLE_SPREADSHEET_ID** : l'id du document collaboratif Google Sheet
+
+### Tests automatisés
+
+Lancer :
+```
+bin/rspec
+```
 
 ## Prochaines étapes
 - Ajouter un filtre géographique
