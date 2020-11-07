@@ -65,35 +65,42 @@
               <dl class="infos">
 
                 <% if item['localization'].present? %>
-                <dt class="visually-hidden">Périmètre d'action :</dt>
-                <dd>
-                  <svg class="icon" aria-hidden="true">
-                    <use xlink:href="#localisation"></use>
-                  </svg>
-                  <%= item['localization'] %>
-                </dd>
+                  <dt class="visually-hidden">Périmètre d'action :</dt>
+                  <dd>
+                    <svg class="icon" aria-hidden="true">
+                      <use xlink:href="#localisation"></use>
+                    </svg>
+                    <%= item['localization'] %>
+                  </dd>
                 <% end %>
 
                 <% if item['website'].present? %>
-                <dt class="visually-hidden">Lien :</dt>
-                <dd>
-                  <svg class="icon" aria-hidden="true">
-                    <use xlink:href="#geography"></use>
-                  </svg>
-                  <a href="<%= item['website'] %>">
-                    <%= item['website'] %>
-                  </a>
-                </dd>
+                  <dt class="visually-hidden">Lien :</dt>
+                  <dd>
+                    <svg class="icon" aria-hidden="true">
+                      <use xlink:href="#geography"></use>
+                    </svg>
+                    <a href="<%= item['website'] %>">
+                      <%= item['website'] %>
+                    </a>
+                  </dd>
                 <% end %>
 
                 <% if item['contact'].present? %>
-                <dt class="visually-hidden">Contact :</dt>
-                <dd>
-                  <svg class="icon" aria-hidden="true">
-                    <use xlink:href="#pencil"></use>
-                  </svg>
-                  <%= item['contact'] %>
-                </dd>
+                  <dt class="visually-hidden">Contact :</dt>
+                  <dd>
+                    <svg class="icon" aria-hidden="true">
+                      <use xlink:href="#pencil"></use>
+                    </svg>
+
+                    <% if (link = extract_link(item['contact'])) %>
+                      <a href="<%= link %>">
+                        <%= item['contact'] %>
+                      </a>
+                    <% else %>
+                      <%= item['contact'] %>
+                    <% end %>
+                  </dd>
                 <% end %>
 
               </dl>

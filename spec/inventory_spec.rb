@@ -144,4 +144,22 @@ RSpec.describe Inventory do
       expect(File).to have_received(:read)
     end
   end
+
+  describe '#extract_link' do
+    contacts_and_expected_links = {
+      'https://example.com' => 'https://example.com',
+      'alice@wonder.land' => 'mailto:alice@wonder.land',
+      '@cheshire' => 'https://www.instagram.com/cheshire/',
+      'insta : cheshire' => 'https://www.instagram.com/cheshire/',
+      'send a message to @cheshire' => 'https://www.instagram.com/cheshire/',
+      'wonderland' => nil,
+      '' => nil,
+      nil => nil,
+    }
+    contacts_and_expected_links.each do |contact, expected_link|
+      it "turns #{contact.inspect} into #{expected_link.inspect}" do
+        expect(subject.extract_link(contact)).to eq(expected_link)
+      end
+    end
+  end
 end
