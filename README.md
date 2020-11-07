@@ -69,10 +69,16 @@ Les thématiques de l'inventaire sont listées dans un fichier JSON à part  pou
 permettre leur personnalisation. Vous pouvez vous référer au fichier
 `src/data/topics_example.json` pour en comprendre la structure de données.
 
+### Installation
+
+```sh
+bundle install
+```
+
 ### Génération de la page d'inventaire
 
 Lancer :
-```
+```sh
 bin/build
 ```
 
@@ -84,7 +90,8 @@ projet](https://cloud.google.com/docs/authentication/api-keys) dans
 https://console.developers.google.com et y associer une clé d'API spécifique pour
 ce projet.
 
-Vous devez renseigner les variables suivantes dans votre fichier `.env`:
+Vous devez renseigner les variables suivantes dans un fichier `.env` à la
+racine du projet:
 ```
 GOOGLE_SHEETS_API_KEY=***
 GOOGLE_SPREADSHEET_ID=***
@@ -93,7 +100,6 @@ GOOGLE_SPREADSHEET_ID=***
 - **GOOGLE_SPREADSHEET_ID** : l'id du document collaboratif Google Sheet
 
 ## Prochaines étapes
-- Automatiser la génération du fichier JSON à une fois par jour
 - Ajouter un filtre géographique
 - Ajouter une barre de recherche (simple parsing du contenu du fichier JSON)
 - Ajouter un formulaire pour soumettre une proposition qui s'ajouter
