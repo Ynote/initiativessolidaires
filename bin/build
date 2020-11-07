@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require_relative './../src/lib/inventory.rb'
+require_relative '../src/lib/app.rb'
 
 Inventory.build
 

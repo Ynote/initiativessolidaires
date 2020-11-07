@@ -1,8 +1,3 @@
-require 'google/apis/sheets_v4'
-require 'json'
-require 'dotenv/load'
-require_relative './constants.rb'
-
 class GoogleSheetsFetcher
   TOPICS_SHEET_NAME = 'Thématiques'.freeze
   TOPICS_SHEET_RANGE = 'A:C'.freeze
