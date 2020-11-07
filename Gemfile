@@ -11,16 +11,16 @@ gem 'erb', '~> 2.2'
 gem 'json'
 
 # Request Google Sheets API
-gem  'google-api-client'
+gem 'google-api-client', require: 'google/apis/sheets_v4'
 
 # Style terminal strings
 gem 'pastel'
 
 # Manage environment variables
-gem 'dotenv'
+gem 'dotenv', require: 'dotenv/load'
 
 # Run tests
-gem 'rspec', groups: [:development, :test]
+gem 'rspec', groups: [:test]
 
 # Pause code to test and debug
-gem 'pry', groups: [:development]
+gem 'pry'

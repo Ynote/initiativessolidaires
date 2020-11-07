@@ -1,10 +1,3 @@
-require 'erb'
-require 'json'
-require 'dotenv/load'
-require_relative './constants.rb'
-require_relative './string_monkey_patch.rb'
-require_relative './google_sheets_fetcher.rb'
-
 class Inventory
   def self.build
     GoogleSheetsFetcher.new.run

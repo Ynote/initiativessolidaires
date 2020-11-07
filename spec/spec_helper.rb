@@ -1,3 +1,2 @@
-require 'pry'
-require_relative './../src/lib/google_sheets_fetcher'
-require_relative './../src/lib/inventory.rb'
+require_relative '../src/lib/app.rb'
+Bundler.require(:test)
