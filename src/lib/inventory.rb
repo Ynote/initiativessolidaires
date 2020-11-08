@@ -25,6 +25,20 @@ class Inventory
     end
   end
 
+  def extract_link(text)
+    case text
+    when /^https?:\/\//
+      text
+    when /^insta : ([-_a-z0-9]+)/i,
+         /(?:^| )@([-_a-z0-9]+)/i
+      "https://www.instagram.com/#{$1}/"
+    when /@/
+      "mailto:#{text}"
+    else
+      nil
+    end
+  end
+
   def get_binding
     binding
   end
