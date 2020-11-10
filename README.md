@@ -1,4 +1,4 @@
-| _Le dépôt distant `origin` de ce projet est maintenant migré sur [https://gitlab.com/ynote_hk/initiativessolidaires]._
+> _Le dépôt distant `origin` de ce projet est maintenant migré sur https://gitlab.com/ynote_hk/initiativessolidaires._
 
 ![Deploy](https://github.com/Ynote/initiativessolidaires/workflows/Deploy/badge.svg)
 # Inventaire collaboratif des cagnottes et initiatives solidaires
